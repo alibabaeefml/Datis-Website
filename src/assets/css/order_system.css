@@ -1,0 +1,84 @@
+/* rotate around */
+.rotation-wrapper {
+  width: 500px;
+  height: 500px;
+}
+.center-div,
+.rotation-path {
+  background-color: transparent;
+  border: solid #b294f6 3px;
+  border-radius: 9999px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-div {
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+}
+.circle-1 {
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+}
+.parent-rotate-1 {
+  animation: pathRotate 5s infinite linear;
+  width: 200px;
+  height: 200px;
+}
+.circle-2 {
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+}
+.parent-rotate-2 {
+  animation: pathRotate 5s infinite linear;
+  width: 270px;
+  height: 270px;
+}
+.circle-3 {
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+}
+.parent-rotate-3 {
+  animation: pathRotate 5s infinite linear;
+  width: 340px;
+  height: 340px;
+}
+.circle-4 {
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 500px;
+}
+.parent-rotate-4 {
+  animation: pathRotate 5s infinite linear;
+  width: 470px;
+  height: 360px;
+}
+.child-rotate {
+  animation: childRotate 5s infinite linear;
+}
+@keyframes pathRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes childRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
