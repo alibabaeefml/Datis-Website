@@ -1776,6 +1776,7 @@ svg.heart {
   animation-duration: 0.45s;
   animation-fill-mode: forwards;
 }
+
 @keyframes height-zero {
   to {
     height: 0;
@@ -3589,19 +3590,19 @@ p#typewriter-dark:after {
   align-items: center;
 }
 .swiper-card .swiper-slide {
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease;
+  transition: all 1s;
+  -webkit-transition: all 1s;
   height: -moz-fit-content;
   height: fit-content;
 }
 .swiper-card .swiper-slide:not(.swiper-slide-active) {
   cursor: pointer;
-  transform: scale(0.75);
-  margin-top: 15vh;
+  scale:.75;
+  margin-top: 100px;
 }
 .swiper-card .swiper-slide.swiper-slide-active {
   margin-top: 0;
-  animation: scale-out 0.45s 3s forwards;
+  scale: 1;
 }
 .btn-triangle-down {
   position: relative;
@@ -3634,14 +3635,7 @@ p#typewriter-dark:after {
   border-top: 9px solid #0251ad;
   bottom: -9px;
 }
-@keyframes scale-out {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.85);
-  }
-}
+
 /* sample-works */
 .index-sample-works {
   position: relative;

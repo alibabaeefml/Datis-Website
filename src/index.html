@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>گروه فناوری اطلاعات داتیس</tit`le>
+    <title>گروه فناوری اطلاعات داتیس</title>
 
     <!-- fullpage css -->
     <link rel="stylesheet" href="assets/plugins/fullpage/fullpage.min.css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
     <!-- tailwind css -->
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
 
   <body>
@@ -229,15 +230,18 @@
       <section class="section" id="section-two">
         <section class="container mx-auto flex flex-col justify-center h-full">
           <div class="text-center font-kalameh text-xl mb-16">
-            <h3 class="font-bold mb-2">بر روی تخحصص های زیر تمرکز کرده ایم</h3>
-            <h3>We Focused On</h3>
+            <h3 class="title_fa font-bold opacity-0 duration-300">
+              بر روی تخحصص های زیر تمرکز کرده ایم
+            </h3>
+            <h3 class="title_en opacity-0 duration-500">We Focused On</h3>
           </div>
-          <!-- list of focused fields -->
-          <ul class="grid grid-cols-3 gap-y-20 w-9/12 mx-auto">
+          <ul
+            class="specialties-list grid grid-cols-3 gap-y-20 duration-500 scale-0 opacity-0 w-[45%] mx-auto relative"
+          >
             <li class="flex flex-col items-center">
               <img class="mb-5" src="assets/images/web-settings.png" alt="" />
               <p class="mb-1 text-base">برنامه نویسی بک اند</p>
-              <p class="text-sm">Backend Development</p>
+              <p class="text-sm">BackEnd Development</p>
             </li>
             <li class="flex flex-col items-center">
               <img class="mb-5" src="assets/images/web-design.png" alt="" />
@@ -245,19 +249,24 @@
               <p class="text-sm">UI/UX Design</p>
             </li>
             <li class="flex flex-col items-center">
-              <img class="mb-5" src="assets/images/web-settings.png" alt="" />
-              <p class="mb-1 text-base">برنامه نویسی بک اند</p>
-              <p class="text-sm">Backend Development</p>
+              <img class="mb-5" src="assets/images/fronend-dev.png" alt="" />
+              <p class="mb-1 text-base">برنامه نویسی رابط کاربری</p>
+              <p class="text-sm">FrontEnd Development</p>
             </li>
             <li class="flex flex-col items-center">
-              <img class="mb-5" src="assets/images/web-design.png" alt="" />
-              <p class="mb-1 text-base">طراحی رابط کاربری و تجربه کاربری</p>
-              <p class="text-sm">UI/UX Design</p>
+              <img class="mb-5" src="assets/images/004-desktop.png" alt="" />
+              <p class="mb-1 text-base">سامانه های کاربردی</p>
+              <p class="text-sm">Application Systems</p>
             </li>
             <li class="flex flex-col items-center">
-              <img class="mb-5" src="assets/images/web-settings.png" alt="" />
-              <p class="mb-1 text-base">برنامه نویسی بک اند</p>
-              <p class="text-sm">Backend Development</p>
+              <img class="mb-5" src="assets/images/001-wireframe.png" alt="" />
+              <p class="mb-1 text-base">مدیریت محتوا</p>
+              <p class="text-sm">Content Management</p>
+            </li>
+            <li class="flex flex-col items-center">
+              <img class="mb-5" src="assets/images/005-web.png" alt="" />
+              <p class="mb-1 text-base">برنامه نویسی پرتال های سازمانی</p>
+              <p class="text-sm">Organizations' Portal Development</p>
             </li>
           </ul>
         </section>
@@ -1183,7 +1192,7 @@
               </div>
               <div class="h-full w-fit flex flex-col justify-center">
                 <div
-                  class="base-card w-fit h-[80px] mr-8 overflow-hidden"
+                  class="base-card w-fit p-4 h-[10%] mr-8 overflow-hidden"
                   id="slide-three-card"
                 >
                   <div class="flex items-center mb-4">
