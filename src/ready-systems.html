@@ -741,9 +741,11 @@
               $("video").attr("src", e.src);
               $("video").attr("id", e.id);
               if (!clicked) {
-                saved_swipe_no > 1
-                  ? video_swiper.slideNext()
-                  : video_swiper.slidePrev();
+                if (saved_swipe_no > 1 && saved_swipe_no < 5) {
+                  video_swiper.slideNext();
+                } else {
+                  video_swiper.slidePrev();
+                }
                 saved_swipe_no += 1;
                 if (saved_swipe_no > 4) {
                   saved_swipe_no = 1;
@@ -754,6 +756,7 @@
         });
       };
       swiper_loader();
+      $("video").get(0).play();
       setInterval(() => {
         swiper_loader();
       }, 1000);

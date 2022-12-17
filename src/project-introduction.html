@@ -7,8 +7,12 @@
     <title>داتیس: صفحه معرفی پروژه</title>
 
     <!-- css styles -->
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
     <!-- sidebar menu -->
@@ -161,23 +165,11 @@
                   </div>
                 </div>
 
-                <!-- Save and Like News -->
-                <div class="flex flex-col justify-around mr-auto pl-0 md:pl-6">
+                <!-- Like News -->
+                <div class="flex flex-col mr-auto pl-0 md:pl-6">
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
-                    <input type="checkbox" id="8245333" class="save-btn" />
-                    <label for="8245333">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                      >
-                        <path
-                          d="M5.2 20.7V5.1q0-.775.55-1.325.55-.55 1.325-.55h9.85q.775 0 1.325.55.55.55.55 1.325v15.6L12 17.8Z"
-                        />
-                      </svg>
-                    </label>
                     <input type="checkbox" id="874613" class="like-btn" />
                     <label for="874613">
                       <svg
@@ -219,7 +211,7 @@
             }
             "
                   >
-                    <div class="flex gap-1 rating-div">
+                    <div class="flex gap-1 flex-row-reverse">
                       <template x-for="(star, index) in ratings" :key="index">
                         <button
                           @click="rate(star.amount)"
@@ -305,23 +297,11 @@
                   </div>
                 </div>
 
-                <!-- Save and Like News -->
-                <div class="flex flex-col justify-around mr-auto pl-0 md:pl-6">
+                <!-- Like News -->
+                <div class="flex flex-col mr-auto pl-0 md:pl-6">
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
-                    <input type="checkbox" id="54287387" class="save-btn" />
-                    <label for="54287387">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                      >
-                        <path
-                          d="M5.2 20.7V5.1q0-.775.55-1.325.55-.55 1.325-.55h9.85q.775 0 1.325.55.55.55.55 1.325v15.6L12 17.8Z"
-                        />
-                      </svg>
-                    </label>
                     <input type="checkbox" id="61636" class="like-btn" />
                     <label for="61636">
                       <svg
@@ -363,7 +343,7 @@
             }
             "
                   >
-                    <div class="flex gap-1 rating-div">
+                    <div class="flex gap-1 flex-row-reverse">
                       <template x-for="(star, index) in ratings" :key="index">
                         <button
                           @click="rate(star.amount)"
@@ -449,23 +429,11 @@
                   </div>
                 </div>
 
-                <!-- Save and Like News -->
-                <div class="flex flex-col justify-around mr-auto pl-0 md:pl-6">
+                <!-- Like News -->
+                <div class="flex flex-col mr-auto pl-0 md:pl-6">
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
-                    <input type="checkbox" id="6156156" class="save-btn" />
-                    <label for="6156156">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        width="24"
-                      >
-                        <path
-                          d="M5.2 20.7V5.1q0-.775.55-1.325.55-.55 1.325-.55h9.85q.775 0 1.325.55.55.55.55 1.325v15.6L12 17.8Z"
-                        />
-                      </svg>
-                    </label>
                     <input type="checkbox" id="6556561" class="like-btn" />
                     <label for="6556561">
                       <svg
@@ -507,7 +475,7 @@
             }
             "
                   >
-                    <div class="flex gap-1 rating-div">
+                    <div class="flex gap-1 flex-row-reverse">
                       <template x-for="(star, index) in ratings" :key="index">
                         <button
                           @click="rate(star.amount)"
@@ -690,11 +658,11 @@
 
       <!-- comments -->
       <section
-        class="relative col-start-1 col-end-13 grid grid-cols-12 mt-20 md:mb-40"
+        class="col-start-1 col-end-12 mt-20 md:mb-40 flex flex-row max-lg:flex-col justify-between w-full mx-auto"
       >
-        <div class="col-start-1 col-end-13 lg:col-end-13 lg:pl-4">
+        <div class="flex flex-col w-[68%] max-lg:w-full">
           <h3 class="text-lg py-3">نظرات کاربران</h3>
-          <ul class="comments-list divide-y-2">
+          <ul class="comments-list">
             <li class="p-4">
               <div class="flex items-center gap-x-3">
                 <img class="rounded-full" src="assets/images/user.jpg" alt="" />
@@ -898,7 +866,7 @@
                   </div>
                 </li>
               </ul>
-              <!-- reply btn and like -->
+              <!-- reply btn and like btn -->
               <div class="flex mt-3 items-center justify-between">
                 <button class="btn-blue-light">پاسخ</button>
                 <!-- feedback input -->
@@ -928,21 +896,22 @@
             </li>
           </ul>
         </div>
-        <form
-          class="col-start-1 col-end-13 lg:col-start-1 lg:col-end-13 lg:sticky my-auto mt-0 top-0"
-          action=""
-        >
-          <h3 class="text-lg py-3 h-100">نظرات خود را با ما در میان بگذارید</h3>
-          <textarea
-            class="w-full bg-gray-50 rounded-3xl p-3 comment-textarea"
-            name=""
-            id=""
-            placeholder="نظر خود را اینجا وارد کنید...."
-          ></textarea>
-          <button type="submit" class="btn-blue-light flex mr-auto mt-4">
-            ارسال نظر
-          </button>
-        </form>
+        <div class="flex flex-col w-[30%] max-lg:w-full relative">
+          <form action="" class="lg:sticky top-0 w-full">
+            <h3 class="text-lg py-3 h-100">
+              نظرات خود را با ما در میان بگذارید
+            </h3>
+            <textarea
+              class="w-full bg-gray-50 rounded-3xl p-3 comment-textarea"
+              name=""
+              id=""
+              placeholder="نظر خود را اینجا وارد کنید...."
+            ></textarea>
+            <button type="submit" class="btn-blue-light flex mr-auto mt-4">
+              ارسال نظر
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 

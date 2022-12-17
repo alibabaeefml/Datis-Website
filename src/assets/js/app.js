@@ -62,6 +62,6 @@ $(window).resize(function () {
     if (obj) {
       Object.assign(obj.style, SidebarHide);
     }
-    document.getElementById("overlayClass").style.width = "0%";
+    $("#overlayClass").length ? (overlay.style.width = "0%") : null;
   }
 });

@@ -1614,15 +1614,18 @@ svg.heart {
   width: 100%;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
+}
+.comments-list li {
+  margin-top: 10px;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
-.comment-textarea{
+.comment-textarea {
   min-height: 200px;
 }
 .feedback-div input {
   display: none;
 }
-.feedback-div svg{
+.feedback-div svg {
   fill: none;
   stroke: black;
   cursor: pointer;
@@ -3207,12 +3210,12 @@ svg.heart {
   .page-title h3 {
     justify-content: center;
   }
-  .page-title h3{
+  .page-title h3 {
     display: block;
-    column-gap:unset;
+    column-gap: unset;
     font-size: 24px;
   }
-  .page-title h3 span{
+  .page-title h3 span {
     margin: 0;
     display: block;
   }
