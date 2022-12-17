@@ -1898,8 +1898,8 @@ svg.heart {
 .col-start-9 {
   grid-column-start: 9;
 }
-.col-end-13 {
-  grid-column-end: 13;
+.col-end-12 {
+  grid-column-end: 12;
 }
 .float-left {
   float: left;
@@ -4119,14 +4119,7 @@ p#typewriter-dark:after {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.video-guide-swiper .swiper-slide:nth-child(odd) .swiper-slide-content {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-.video-guide-swiper .swiper-slide:nth-child(even) .swiper-slide-content {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 246 255 / var(--tw-bg-opacity));
-}
+
 .order-system-img-container {
   order: 1;
   display: none;

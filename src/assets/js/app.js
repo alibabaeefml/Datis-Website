@@ -1,3 +1,16 @@
+// Define Reactivity
+function ref(value) {
+  const refObject = {
+    get value() {
+      return value;
+    },
+    set value(newValue) {
+      value = newValue;
+    },
+  };
+  return refObject;
+}
+
 // Close onclick outside
 document.addEventListener("click", (e) => {
   const toggle = document.querySelector(".search__toggle");
@@ -46,7 +59,9 @@ function closeSidebar() {
 $(window).resize(function () {
   if ($(window).width() > 991.98) {
     var obj = document.getElementById("mySidebar");
-    Object.assign(obj.style, SidebarHide);
+    if (obj) {
+      Object.assign(obj.style, SidebarHide);
+    }
     document.getElementById("overlayClass").style.width = "0%";
   }
 });

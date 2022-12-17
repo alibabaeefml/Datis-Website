@@ -7,8 +7,12 @@
     <title>داتیس: لیست اخبار</title>
 
     <!-- css styles -->
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
     <!-- sidebar menu -->
@@ -130,7 +134,7 @@
     <main class="container overflow-x-hidden">
       <!-- About Ready Systems -->
       <section class="grid grid-cols-12 mt-12">
-        <div class="col-start-1 col-end-13 lg:col-end-7 order-2 lg:order-1">
+        <div class="col-start-1 col-end-12 lg:col-end-7 order-2 lg:order-1">
           <section class="page-title page-title-single">
             <h3>
               Ready Systems
@@ -161,27 +165,27 @@
           </a>
         </div>
         <div
-          class="col-start-1 col-end-13 lg:col-start-7 ready-system-img-container"
+          class="col-start-1 col-end-12 lg:col-start-7 order-1 lg:order-2 ready-system-img-container"
         >
           <img src="assets/images/laptop.png" alt="team-images" />
         </div>
       </section>
 
-      <!--  -->
+      <!-- active swipe item  bg-[#eef6ff] -->
       <section class="grid grid-cols-12 gap-7">
-        <div class="col-start-1 col-end-13 lg:col-end-4">
+        <div class="col-start-1 col-end-12 lg:col-end-4">
           <div class="video-guide-swiper">
             <div class="swiper" id="video-guide-swiper">
               <div class="swiper-wrapper h-[490px]">
                 <div class="swiper-slide">
-                  <div class="swiper-slide-content">
+                  <div class="swiper-slide-content bg-[#fafafa]" swipe_no="1">
                     <div class="flex gap-2 items-center pb-2">
                       <img
                         src="assets/images/icons/Iconly-Light-outline-simple-using.svg"
                         width="25px"
                         alt="icon"
                       />
-                      <span>سادگی استفاده</span>
+                      <span>عنوان یکم</span>
                     </div>
                     <p class="text-xs leading-6">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
@@ -190,14 +194,14 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper-slide-content">
+                  <div class="swiper-slide-content bg-[#fafafa]" swipe_no="2">
                     <div class="flex gap-2 items-center pb-2">
                       <img
                         src="assets/images/icons/Iconly-Light-outline-simple-using.svg"
                         width="25px"
                         alt="icon"
                       />
-                      <span>سادگی استفاده</span>
+                      <span>عنوان دوم</span>
                     </div>
                     <p class="text-xs leading-6">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
@@ -206,14 +210,14 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper-slide-content">
+                  <div class="swiper-slide-content bg-[#fafafa]" swipe_no="3">
                     <div class="flex gap-2 items-center pb-2">
                       <img
                         src="assets/images/icons/Iconly-Light-outline-simple-using.svg"
                         width="25px"
                         alt="icon"
                       />
-                      <span>سادگی استفاده</span>
+                      <span>عنوان سوم</span>
                     </div>
                     <p class="text-xs leading-6">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
@@ -222,14 +226,14 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper-slide-content">
+                  <div class="swiper-slide-content bg-[#fafafa]" swipe_no="4">
                     <div class="flex gap-2 items-center pb-2">
                       <img
                         src="assets/images/icons/Iconly-Light-outline-simple-using.svg"
                         width="25px"
                         alt="icon"
                       />
-                      <span>سادگی استفاده</span>
+                      <span>عنوان چهارم</span>
                     </div>
                     <p class="text-xs leading-6">
                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
@@ -241,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="col-start-1 col-end-13 lg:col-start-4 items-center">
+        <div class="col-start-1 col-end-12 lg:col-start-4 items-center">
           <div
             class="bg-[#F0F0F0] bas-card flex w-full h-full rounded-40 py-3 px-6"
           >
@@ -251,11 +255,14 @@
               >
                 <div class="swiper-slide h-fit my-auto">
                   <video
+                    class="w-auto h-[490px] mx-auto rounded-40"
+                    id="swiper_video"
                     poster="assets/images/Eric-Thomas.png"
                     class="rounded-40 w-full"
                     controls
+                    muted
+                    autoplay
                   >
-                    <source src="assets/videos/mov_bbb.mp4" type="video/mp4" />
                     Your browser does not support HTML video.
                   </video>
                 </div>
@@ -697,10 +704,62 @@
     <script src="assets/js/app.js"></script>
     <script>
       // Initialize Swiper
-      var swiper = new Swiper("#video-guide-swiper", {
+      var video_swiper = new Swiper("#video-guide-swiper", {
         direction: "vertical",
         slidesPerView: 3,
         spaceBetween: 15,
+        autoplay: {
+          delay: 1000,
+        },
+        grabCursor: true,
+      });
+      video_swiper.autoplay.stop();
+      // Videos Data Template (to fetch from backend later...)
+      const videos = ref([
+        { src: "./assets/videos/mov_bbb.mp4", id: 16131631, swipe_no: 1 },
+        { src: "./assets/videos/test.mp4", id: 25464635, swipe_no: 2 },
+        { src: "./assets/videos/mov_bbb.mp4", id: 25464635, swipe_no: 3 },
+        { src: "./assets/videos/test.mp4", id: 25464635, swipe_no: 4 },
+      ]);
+      let saved_swipe_no = 1;
+      const match_video_item = () => {
+        $(".swiper-slide-content").each((i, s) => {
+          if ($(s).attr("swipe_no") == saved_swipe_no) {
+            $(s).addClass("bg-[#eef6ff]");
+            $(s).removeClass("bg-[#fafafa]");
+          } else {
+            $(s).removeClass("bg-[#eef6ff]");
+            $(s).addClass("bg-[#fafafa]");
+          }
+        });
+      };
+      const swiper_loader = (clicked = false) => {
+        $(videos.value).each((i, e) => {
+          if ($("video").get(0).ended || saved_swipe_no == 1 || clicked) {
+            match_video_item();
+            if (saved_swipe_no == e.swipe_no) {
+              $("video").attr("src", e.src);
+              $("video").attr("id", e.id);
+              if (!clicked) {
+                saved_swipe_no > 1
+                  ? video_swiper.slideNext()
+                  : video_swiper.slidePrev();
+                saved_swipe_no += 1;
+                if (saved_swipe_no > 4) {
+                  saved_swipe_no = 1;
+                }
+              }
+            }
+          }
+        });
+      };
+      swiper_loader();
+      setInterval(() => {
+        swiper_loader();
+      }, 1000);
+      $(".swiper-slide-content").click((e) => {
+        saved_swipe_no = $(e.currentTarget).attr("swipe_no");
+        swiper_loader(true);
       });
     </script>
   </body>
