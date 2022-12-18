@@ -733,6 +733,7 @@
           }
         });
       };
+
       const swiper_loader = (clicked = false) => {
         $(videos.value).each((i, e) => {
           if ($("video").get(0).ended || saved_swipe_no == 1 || clicked) {
@@ -754,14 +755,24 @@
             }
           }
         });
+        if (clicked) {
+          saved_swipe_no++;
+          if (saved_swipe_no > 4) {
+            saved_swipe_no = 1;
+          }
+          console.log(saved_swipe_no);
+        }
       };
       swiper_loader();
       $("video").get(0).play();
-      setInterval(() => {
-        swiper_loader();
-      }, 1000);
+      $("video")
+        .get(0)
+        .addEventListener("ended", () => {
+          swiper_loader();
+        });
       $(".swiper-slide-content").click((e) => {
-        saved_swipe_no = $(e.currentTarget).attr("swipe_no");
+        saved_swipe_no = parseInt($(e.currentTarget).attr("swipe_no"));
+
         swiper_loader(true);
       });
     </script>
