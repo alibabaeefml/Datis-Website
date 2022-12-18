@@ -483,6 +483,12 @@ li {
 .word-spacing-base {
   word-spacing: 8px;
 }
+.ltr{
+  direction: ltr;
+}
+.rtl{
+  direction: rtl;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -3495,7 +3501,7 @@ header {
   padding: 1rem;
   width: 88%;
 }
-p#typewriter {
+.typewriter {
   text-align: left;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -3508,15 +3514,15 @@ p#typewriter {
   color: rgb(31 41 55 / var(--tw-text-opacity));
   direction: ltr;
 }
-p#typewriter:after,
-p#typewriter-dark:after {
+.typewriter:after,
+.typewriter-dark:after {
   content: "|";
   display: inline-block;
   margin-left: 1px;
   animation: blink 1.14s infinite step-end;
 }
-p#typewriter-dark,
-p#typewriter-dark:after {
+.typewriter-dark,
+.typewriter-dark:after {
   text-align: left;
   font-size: 0.875rem;
   line-height: 1.25rem;
