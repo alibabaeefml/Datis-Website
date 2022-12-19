@@ -1,3 +1,14 @@
+// Counter
+const counter = (start_no, end_no, delay, element) => {
+  let interval = setInterval(() => {
+    start_no++;
+    $(element).text(start_no);
+    if (start_no === end_no) {
+      clearInterval(interval);
+    }
+  }, delay);
+};
+
 // Initialize fullpage
 jQuery(function () {
   // TypeWriter Function
@@ -114,29 +125,7 @@ jQuery(function () {
         );
       }
       if ($("#slide-four.active").length) {
-        // enter phone number
-        $("#sample_phone_inp").css("border-color", "red");
-        $("#datis_phone_inp").css("border-color", "rgb(72, 1, 255)");
-        typewrite(
-          `09120000000`,
-          $("#datis_phone_inp").get(0),
-          null,
-          "input",
-          150
-        );
-        typewrite(
-          `09650000000`,
-          $("#sample_phone_inp").get(0),
-          null,
-          "input",
-          150
-        );
-        setTimeout(() => {
-          $(".phone-input").css("border-color", "rgb(209, 213, 219)");
-          enter_password();
-        }, 3500);
-        // #e43228
-        let enter_password = () => {
+        const enter_password = () => {
           // enter password
           $("#sample_pass_inp").css("border-color", "red");
           $("#datis_pass_inp").css("border-color", "rgb(72, 1, 255)");
@@ -154,10 +143,91 @@ jQuery(function () {
             "input",
             150
           );
+
           setTimeout(() => {
             $(".pass-input").css("border-color", "rgb(209, 213, 219)");
+            $("#sample_page_loader").toggleClass("scale-0");
+            counter(0, 100, 10, "#datis_load_time");
+            counter(0, 800, 10, "#sample_load_time");
+            setTimeout(() => {
+              $("#datis_webpage").width("100%");
+            }, 800);
+            setTimeout(() => {
+              $("#sample_webpage").width("100%");
+            }, 8000);
           }, 3500);
         };
+        const enter_phone = () => {
+          // enter phone number
+          $("#sample_phone_inp").css("border-color", "red");
+          $("#datis_phone_inp").css("border-color", "rgb(72, 1, 255)");
+          typewrite(
+            `09120000000`,
+            $("#datis_phone_inp").get(0),
+            null,
+            "input",
+            150
+          );
+          typewrite(
+            `09650000000`,
+            $("#sample_phone_inp").get(0),
+            null,
+            "input",
+            150
+          );
+          setTimeout(() => {
+            $(".phone-input").css("border-color", "rgb(209, 213, 219)");
+            enter_password();
+          }, 3500);
+        };
+
+        const view_load_animation = () => {
+          if (!globalThis.view_loaded) {
+            globalThis.view_loaded = true;
+            $(".web-card").css({ margin: 0, opacity: 1 });
+            setTimeout(() => {
+              $(".speed-indicator").css({ margin: 0, opacity: 1 });
+              enter_phone();
+            }, 500);
+          }
+        };
+        view_load_animation();
+      }
+      if ($("#slide-five.active").length) {
+        typewrite(
+          "جستجوی مربوط به سایت شما",
+          $("#google_search_inp").get(0),
+          null,
+          "input",
+          0
+        );
+        // const switch_google_results = async () => {
+        //   const move_up = (callback = null) =>
+        //     $("#gr_item_1").animate(
+        //       { transform: `translate(0px,-156px)` },
+        //       1000, callback
+        //     );
+        //   const move_down = (el, num, callback = null) => {
+        //     el.animate(
+        //       { transform: `translate(0px,${num}px)` },
+        //       1000, callback
+        //     );
+        //   };
+
+        //   move_up()
+        //   move_down($("#gr_item_2"),156, move_up(-156*2, move_down($("#gr-item-3"))))
+        // };
+
+        const load_google_results_view = () => {
+          setTimeout(() => {
+            $("#google_results_view").removeClass("hidden");
+            $("#seo_desc_div").animate({ left: "133px" }, 1000);
+          }, 4000);
+          setTimeout(() => {
+            switch_google_results();
+          }, 7000);
+        };
+        load_google_results_view();
       }
     },
   });

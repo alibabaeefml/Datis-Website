@@ -1,6 +1,7 @@
 @import url(https://gitcdn.ir/library/PersianFonts/kalameh/4.1/fontiran.css);
 @import url(https://gitcdn.ir/library/PersianFonts/iranyekan/3.3/css/gitcdn.css);
 @import url(https://gitcdn.ir/library/PersianFonts/iranyekan/3/style.css);
+@import url(./loading.css);
 /* @import url("./kalameh.css"); */
 @font-face {
   font-family: mxb;
@@ -483,10 +484,10 @@ li {
 .word-spacing-base {
   word-spacing: 8px;
 }
-.ltr{
+.ltr {
   direction: ltr;
 }
-.rtl{
+.rtl {
   direction: rtl;
 }
 .container {
@@ -1130,6 +1131,7 @@ footer {
   font-weight: 900;
   font-family: var(--kalameh-font);
 }
+
 /* ========== CARD ========== */
 .base-card {
   border-radius: 20px;
@@ -1139,6 +1141,7 @@ footer {
   --tw-shadow-colored: 0px 2px 8px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: 0.8s;
 }
 .aside-card {
   display: block;
@@ -3603,7 +3606,7 @@ header {
 }
 .swiper-card .swiper-slide:not(.swiper-slide-active) {
   cursor: pointer;
-  scale:.75;
+  scale: 0.75;
   margin-top: 100px;
 }
 .swiper-card .swiper-slide.swiper-slide-active {
