@@ -1,5 +1,10 @@
 // Counter
-const counter = (start_no, end_no, delay, element) => {
+const counter = (
+  start_no = Number,
+  end_no = Number,
+  delay = Number,
+  element = String
+) => {
   let interval = setInterval(() => {
     start_no++;
     $(element).text(start_no);
@@ -201,22 +206,19 @@ jQuery(function () {
           "input",
           0
         );
-        // const switch_google_results = async () => {
-        //   const move_up = (callback = null) =>
-        //     $("#gr_item_1").animate(
-        //       { transform: `translate(0px,-156px)` },
-        //       1000, callback
-        //     );
-        //   const move_down = (el, num, callback = null) => {
-        //     el.animate(
-        //       { transform: `translate(0px,${num}px)` },
-        //       1000, callback
-        //     );
-        //   };
-
-        //   move_up()
-        //   move_down($("#gr_item_2"),156, move_up(-156*2, move_down($("#gr-item-3"))))
-        // };
+        const switch_google_results = async () => {
+          counter(0, 100, 40, "#seo_percentage");
+          $("#gr_item_4").css("translate", "0px -156px");
+          $("#gr_item_3").css("translate", "0px 156px");
+          setTimeout(() => {
+            $("#gr_item_4").css("translate", "0px -312px");
+            $("#gr_item_2").css("translate", "0px 156px");
+          }, 2000);
+          setTimeout(() => {
+            $("#gr_item_4").css("translate", "0px -468px");
+            $("#gr_item_1").css("translate", "0px 156px");
+          }, 4000);
+        };
 
         const load_google_results_view = () => {
           setTimeout(() => {
@@ -259,6 +261,7 @@ var swiper_card = new Swiper(".swiper-card", {
   slideToClickedSlide: true,
   spaceBetween: 0,
   speed: 1500,
+  width: 700,
   autoplay: {
     delay: 1500,
   },
