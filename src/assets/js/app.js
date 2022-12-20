@@ -65,3 +65,18 @@ $(window).resize(function () {
     $("#overlayClass").length ? (overlay.style.width = "0%") : null;
   }
 });
+// Counter util
+const counter = (
+  start_no = Number,
+  end_no = Number,
+  delay = Number,
+  element = String
+) => {
+  let interval = setInterval(() => {
+    start_no++;
+    $(element).text(start_no);
+    if (start_no === end_no) {
+      clearInterval(interval);
+    }
+  }, delay);
+};

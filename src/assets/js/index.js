@@ -1,19 +1,3 @@
-// Counter
-const counter = (
-  start_no = Number,
-  end_no = Number,
-  delay = Number,
-  element = String
-) => {
-  let interval = setInterval(() => {
-    start_no++;
-    $(element).text(start_no);
-    if (start_no === end_no) {
-      clearInterval(interval);
-    }
-  }, delay);
-};
-
 // Initialize fullpage
 jQuery(function () {
   // TypeWriter Function
@@ -207,7 +191,6 @@ jQuery(function () {
           0
         );
         const switch_google_results = async () => {
-          counter(0, 100, 40, "#seo_percentage");
           $("#gr_item_4").css("translate", "0px -156px");
           $("#gr_item_3").css("translate", "0px 156px");
           setTimeout(() => {
@@ -224,7 +207,9 @@ jQuery(function () {
           setTimeout(() => {
             $("#google_results_view").removeClass("hidden");
             $("#seo_desc_div").animate({ left: "133px" }, 1000);
+            counter(0, 100, 70, "#seo_percentage");
           }, 4000);
+
           setTimeout(() => {
             switch_google_results();
           }, 7000);

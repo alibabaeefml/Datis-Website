@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
     <!-- css styles -->
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
     <!-- sidebar menu -->
@@ -218,9 +219,9 @@
               alt="team-images"
             />
             <div
-              class="p-[10px] bg-red-900 bg-opacity-25 absolute top-[40%] right-0 rounded-[10px]"
+              class="p-[10px] bg-red-900 bg-opacity-25 absolute top-[40%] right-[45px] rounded-[10px]"
             >
-              <div class="py-4 px-5 bg-white rounded-[10px] grid grid-cols-2">
+              <div class="py-4 px-5 bg-white rounded-[10px] flex">
                 <div>
                   <div class="text-xl pb-4">ترافیک وب</div>
                   <img
@@ -231,8 +232,14 @@
                   />
                 </div>
                 <div>
-                  <div class="text-xs">بازدیدکنندگان</div>
-                  <span class="text-[#4801FF] text-[26px]">۲۰.۳۴۵</span>
+                  <div class="flex flex-col">
+                    <span class="text-[12px]">بازدیدکنندگان </span>
+                    <span class="text-[#4801FF] text-[26px]" id="visitors_no">۲۰.۳۴۵</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-[12px]">افزایش بازدید </span>
+                    <span class="text-[#4801FF] text-[26px]"><span id="visit_percentage">0</span>%</span>
+                  </div>
                 </div>
               </div>
             </div>
