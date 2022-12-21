@@ -132,7 +132,7 @@
           <div class="index-section-center-container">
             <code class="index-section-one-center-content">
               <!-- paragraph of code that is writing auto -->
-              <p id="typewriter"></p>
+              <p class="typewriter"></p>
             </code>
             <ul class="index-section-center-menu">
               <li>
@@ -306,15 +306,15 @@
                 نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
                 کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
                 جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
-                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
-                زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
-                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
-                زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
-                پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                برای طراحان رایانه الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته
+                اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
               </p>
             </div>
             <div dir="rtl" class="w-7/12 swiper swiper-card h-full">
-              <div class="swiper-wrapper">
+              <div class="swiper-wrapper ui-swiper">
                 <div class="swiper-slide p-2">
                   <div class="base-card p-3">
                     <div class="flex items-center mb-3">
@@ -1105,16 +1105,16 @@
                   تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                   آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                  راهکارها، و شرایط سخت تایپ به پایان
+                  افزارها شناخت بیشتری را برای طراحان رایانه الخصوص طراحان
+                  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                  توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                  شرایط سخت تایپ به پایان
                 </p>
                 <div
                   class="flex min-h-[350px] w-10/12 mr-auto mt-8 rounded-20 p-4 bg-[#120041]"
                 >
                   <div class="w-full p-4">
-                    <p id="typewriter-dark"></p>
+                    <p class="typewriter-dark"></p>
                   </div>
                   <ul
                     class="flex w-fit float-left h-full px-2 py-4 flex-col items-center gap-y-8 bg-[#311A6B]"
@@ -1192,7 +1192,7 @@
               </div>
               <div class="h-full w-fit flex flex-col justify-center">
                 <div
-                  class="base-card w-fit p-4 h-[10%] mr-8 overflow-hidden"
+                  class="base-card rounded-none w-fit p-4 h-full h-0 duration-500 mr-8 overflow-hidden"
                   id="slide-three-card"
                 >
                   <div class="flex items-center mb-4">
@@ -1212,7 +1212,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6"
+                        class="w-6"
                       >
                         <path
                           stroke-linecap="round"
@@ -1231,7 +1231,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6 text-blue-card"
+                        class="w-6 text-blue-card"
                       >
                         <path
                           stroke-linecap="round"
@@ -1243,13 +1243,15 @@
                   </div>
 
                   <div
-                    class="grid grid-cols-2 gap-x-4 mb-4 h-0 overflow-hidden"
+                    class="grid grid-cols-2 gap-x-4 mb-4 overflow-hidden"
                     id="slide-three-one"
                   >
-                    <div class="bg-blue-card rounded-3xl py-3 px-4 text-white">
+                    <div
+                      class="bg-blue-card rounded-3xl rounded-none duration-500 py-3 px-4 text-white"
+                    >
                       <div class="flex items-center">
                         <img
-                          class="w-9 rounded-full border-2 border-blue-400"
+                          class="w-9 rounded-full rounded-none duration-500 border-2 border-blue-400"
                           src="assets/images/person.png"
                           alt="person"
                         />
@@ -1264,16 +1266,40 @@
                         روح اللهی
                       </h3>
                       <button
-                        class="bg-green-300 px-4 py-2 w-fit rounded-full text-[10px]"
+                        class="bg-green-300 px-4 py-2 w-fit rounded-full rounded-none duration-500 text-blue-900 text-[10px]"
                       >
                         به تماس بپیوندید
                       </button>
                     </div>
-                    <div class="bg-blue-100 rounded-3xl p-2"></div>
+                    <div
+                      class="bg-blue-100 rounded-3xl rounded-none duration-500 py-3 px-4 text-blue-900"
+                    >
+                      <div class="flex items-center">
+                        <img
+                          class="w-9 rounded-full rounded-none duration-500 border-2 border-blue-400"
+                          src="assets/images/person.png"
+                          alt="person"
+                        />
+                        <div class="mr-auto text-xs">
+                          16:54
+                          <br />
+                          7 مهر
+                        </div>
+                      </div>
+                      <h3 class="py-3 text-xs">
+                        سجاد <br />
+                        روح اللهی
+                      </h3>
+                      <button
+                        class="bg-green-300 px-4 py-2 w-fit rounded-full rounded-none duration-500 text-[10px]"
+                      >
+                        به تماس بپیوندید
+                      </button>
+                    </div>
                   </div>
 
                   <div
-                    class="flex items-center mb-2 h-0 overflow-hidden"
+                    class="flex items-center mb-2 overflow-hidden"
                     id="slide-three-two"
                   >
                     <h4 class="text-base">پروفایل های افراد</h4>
@@ -1295,40 +1321,40 @@
                   </div>
 
                   <ul
-                    class="flex justify-between mb-4 h-0 overflow-hidden"
-                    id="slide-three-three"
+                    class="flex flex-row-reverse mb-4 overflow-hidden"
+                    id="avatars-ul"
                   >
                     <li>
                       <img
-                        class="w-11 rounded-full"
+                        class="w-11 rounded-full rounded-none duration-500"
                         src="assets/images/person.png"
                         alt="persion"
                       />
                     </li>
                     <li>
                       <img
-                        class="w-11 rounded-full"
+                        class="w-11 rounded-full rounded-none duration-500"
                         src="assets/images/person.png"
                         alt="persion"
                       />
                     </li>
                     <li>
                       <img
-                        class="w-11 rounded-full"
+                        class="w-11 rounded-full rounded-none duration-500"
                         src="assets/images/person.png"
                         alt="persion"
                       />
                     </li>
                     <li>
                       <img
-                        class="w-11 rounded-full"
+                        class="w-11 rounded-full rounded-none duration-500"
                         src="assets/images/person.png"
                         alt="persion"
                       />
                     </li>
                     <li>
                       <div
-                        class="w-11 rounded-full bg-green-card h-full flex justify-center items-center text-xl text-white"
+                        class="w-11 rounded-full rounded-none duration-500 bg-green-card h-full flex justify-center items-center text-xl text-white"
                       >
                         +
                       </div>
@@ -1336,21 +1362,23 @@
                   </ul>
 
                   <div
-                    class="flex justify-between mb-4 p-2 rounded-full text-sm bg-blue-100 h-0 overflow-hidden"
+                    class="flex justify-between mb-4 p-2 rounded-full rounded-none duration-500 text-sm bg-blue-100 overflow-hidden"
                     id="slide-three-four"
                   >
-                    <button class="btn-triangle-down active">
+                    <button
+                      class="btn-triangle-down active rounded-none duration-500"
+                    >
                       آخرین سوالات
                     </button>
                     <button class="btn-triangle-down">گزارش</button>
                   </div>
 
                   <div
-                    class="flex items-center pr-2 border-r-4 border-green-card h-0 overflow-hidden"
+                    class="flex items-center pr-2 border-r-4 border-green-card overflow-hidden"
                     id="slide-three-five"
                   >
                     <img
-                      class="w-10 rounded-full ml-2"
+                      class="w-10 rounded-full rounded-none duration-500 ml-2"
                       src="assets/images/person.png"
                       alt="persion"
                     />
@@ -1375,13 +1403,13 @@
           <div class="container mx-auto h-screen justify-center flex flex-col">
             <section class="page-title w-8/12">
               <h3>
-                <div class="text-left pt-2">
+                <div class="mxb text-left pt-2">
                   BackEnd <br />
                   Devlopment
                 </div>
                 <div>
                   <h6 class="text-lg text-gray-900 leading-7">
-                    برنامه نویسی رابط کاربری
+                    برنامه نویسی بک اند
                   </h6>
                   <p class="text-sm text-gray-600 font-normal">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
@@ -1397,8 +1425,17 @@
               class="w-3/4 h-2/3 mx-auto flex flex-wrap justify-between mt-4"
             >
               <div
-                class="base-card w-2/6 h-full px-4 rounded-[25px] flex flex-col justify-center items-center"
+                class="base-card web-card opacity-0 w-2/6 h-full px-4 rounded-[25px] flex flex-col justify-center items-center relative -mr-8"
               >
+                <div
+                  id="datis_webpage"
+                  class="absolute top-0 left-0 h-full z-[1] w-0 duration-500"
+                >
+                  <img
+                    class="object-cover w-full h-full rounded-3xl"
+                    src="./assets/images/datis_mobile.png"
+                  />
+                </div>
                 <img class="w-[4vw]" src="assets/images/logo.png" alt="logo" />
                 <h6 class="text-center text-lg mt-3 mb-5 leading-5">
                   ورود کاربر <br />
@@ -1408,53 +1445,25 @@
                 </h6>
 
                 <input
-                  class="border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800"
+                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
                   placeholder="شماره موبایل"
                   type="text"
                   name=""
-                  id=""
+                  id="datis_phone_inp"
                 />
 
                 <div class="group relative w-full">
-                  <label
-                    class="absolute right-2 bottom-0 h-fit flex bg-white text-red-500 text-xs my-0 -top-2"
-                    for="password"
-                    >رمز عبور</label
-                  >
                   <input
-                    class="border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
-                    value="password"
+                    class="pass-input border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
                     type="password"
                     name="password"
-                    id="password"
+                    id="datis_pass_inp"
+                    placeholder="رمز عبور"
                   />
                 </div>
 
-                <div class="flex items-center pr-4 mt-2 w-full">
-                  <svg
-                    id="Iconly_Light-outline_Info_Circle"
-                    data-name="Iconly/Light-outline/Info Circle"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                  >
-                    <g id="Info_Circle" data-name="Info Circle">
-                      <path
-                        id="Info_Circle-2"
-                        data-name="Info Circle"
-                        d="M0,5a5,5,0,1,1,5,5A5.005,5.005,0,0,1,0,5ZM.75,5A4.25,4.25,0,1,0,5,.75,4.255,4.255,0,0,0,.75,5ZM4.622,6.9a.375.375,0,0,1,.324-.372l.056,0a.375.375,0,0,1,.051.747L5,7.273A.375.375,0,0,1,4.622,6.9Zm0-1.535,0-.051V3.1a.375.375,0,0,1,.747-.051l0,.051v2.21a.375.375,0,0,1-.747.051Z"
-                        fill="red"
-                      />
-                    </g>
-                  </svg>
-                  <p class="mr-1 text-red-500 text-xs">
-                    رمز عبور وارد شده صحیح نمی باشد
-                  </p>
-                </div>
-
                 <div class="text-blue-title text-xs my-5 w-full">
-                  آیا مشصخات خود را فراموش کرده اید؟
+                  آیا مشخصات خود را فراموش کرده اید؟
                 </div>
 
                 <div class="flex w-full justify-between text-sm">
@@ -1463,95 +1472,111 @@
                 </div>
               </div>
               <!-- with Datis -->
-              <div class="absolute bottom-[20%] right-[40%]">
+              <div
+                class="speed-indicator opacity-0 -m-8 duration-500 absolute bottom-[20%] right-[41%]"
+              >
                 <h6 class="text-2xl font-light">With Datis</h6>
                 <div class="flex flex-row-reverse font-normal">
                   <p>Operation<br />Speed</p>
-                  <span class="mt-auto ml-2 text-2xl text-blue-title"
-                    >15<small class="text-xs text-gray-900 pl-1"
-                      >Ms</small
-                    ></span
+                  <span
+                    id="datis_load_time"
+                    class="mt-auto ml-2 text-2xl text-blue-title"
+                    >0<small class="text-xs text-gray-900 pl-1">Ms</small></span
                   >
                 </div>
               </div>
 
               <!-- Without Datis -->
-              <div class="absolute top-[35%] left-[40%]">
-                <h6 class="text-2xl font-light">With Datis</h6>
+              <div
+                class="speed-indicator opacity-0 -m-8 duration-500 absolute top-[35%] left-[41%]"
+              >
+                <h6 class="text-2xl font-light">Without Datis</h6>
                 <div class="flex flex-row-reverse font-normal">
                   <p>Operation<br />Speed</p>
-                  <span class="mt-auto ml-2 text-2xl text-blue-title"
-                    >15<small class="text-xs text-gray-900 pl-1"
-                      >Ms</small
-                    ></span
+                  <span
+                    id="sample_load_time"
+                    class="mt-auto ml-2 text-2xl text-[red]"
+                    >0<small class="text-xs text-gray-900 pl-1">Ms</small></span
                   >
                 </div>
               </div>
 
               <div
-                class="base-card w-2/6 h-full px-4 rounded-[25px] flex flex-col justify-center items-center"
+                class="base-card opacity-0 web-card w-2/6 h-full px-4 rounded-[25px] flex flex-col justify-center items-center relative -ml-8"
               >
-                <img class="w-[4vw]" src="assets/images/logo.png" alt="logo" />
+                <div
+                  id="sample_page_loader"
+                  class="absolute duration-500 scale-0"
+                >
+                  <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  id="sample_webpage"
+                  class="absolute top-0 left-0 h-full z-[1] w-0 duration-500"
+                >
+                  <img
+                    class="object-cover w-full h-full rounded-3xl"
+                    src="./assets/images/sample_site_landing.PNG"
+                  />
+                </div>
+                <img
+                  class="w-[200px]"
+                  src="assets/images/sample-logo.png"
+                  alt="logo"
+                />
                 <h6 class="text-center text-lg mt-3 mb-5 leading-5">
                   ورود کاربر <br />
                   <span class="text-xs font-light text-gray-700"
-                    >به وبسایت داتیس</span
+                    >وب سایت دیگر</span
                   >
                 </h6>
 
                 <input
-                  class="border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800"
+                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
                   placeholder="شماره موبایل"
                   type="text"
                   name=""
-                  id=""
+                  id="sample_phone_inp"
                 />
 
                 <div class="group relative w-full">
-                  <label
-                    class="absolute right-2 bottom-0 h-fit flex bg-white text-red-500 text-xs my-0 -top-2"
-                    for="password"
-                    >رمز عبور</label
-                  >
                   <input
-                    class="border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
-                    value="password"
+                    class="pass-input border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
                     type="password"
                     name="password"
-                    id="password"
+                    id="sample_pass_inp"
+                    placeholder="رمز عبور"
                   />
                 </div>
 
-                <div class="flex items-center pr-4 mt-2 w-full">
-                  <svg
-                    id="Iconly_Light-outline_Info_Circle"
-                    data-name="Iconly/Light-outline/Info Circle"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                  >
-                    <g id="Info_Circle" data-name="Info Circle">
-                      <path
-                        id="Info_Circle-2"
-                        data-name="Info Circle"
-                        d="M0,5a5,5,0,1,1,5,5A5.005,5.005,0,0,1,0,5ZM.75,5A4.25,4.25,0,1,0,5,.75,4.255,4.255,0,0,0,.75,5ZM4.622,6.9a.375.375,0,0,1,.324-.372l.056,0a.375.375,0,0,1,.051.747L5,7.273A.375.375,0,0,1,4.622,6.9Zm0-1.535,0-.051V3.1a.375.375,0,0,1,.747-.051l0,.051v2.21a.375.375,0,0,1-.747.051Z"
-                        fill="red"
-                      />
-                    </g>
-                  </svg>
-                  <p class="mr-1 text-red-500 text-xs">
-                    رمز عبور وارد شده صحیح نمی باشد
-                  </p>
-                </div>
-
-                <div class="text-blue-title text-xs my-5 w-full">
-                  آیا مشصخات خود را فراموش کرده اید؟
+                <div class="text-[red] text-xs my-5 w-full">
+                  آیا مشخصات خود را فراموش کرده اید؟
                 </div>
 
                 <div class="flex w-full justify-between text-sm">
-                  <button class="btn-blue-light">ساخت اکانت</button>
-                  <button class="btn-blue-light">ورود</button>
+                  <button
+                    class="btn-blue-light hover:border-[red] hover:bg-red-200 text-[red]"
+                  >
+                    ساخت اکانت
+                  </button>
+                  <button
+                    class="btn-blue-light hover:border-[red] hover:bg-red-200 text-[red]"
+                  >
+                    ورود
+                  </button>
                 </div>
               </div>
             </section>
@@ -1576,10 +1601,10 @@
                 class="text-sm flex p-2 w-3/5 text-[#222] border border-gray-200 rounded-full outline-none shadow-card"
               >
                 <input
+                  id="google_search_inp"
                   type="search"
                   class="w-full px-2"
                   name="SearchBox"
-                  value="ورزش 3"
                 />
 
                 <div class="flex border-r-2 border-gray-300">
@@ -1747,55 +1772,80 @@
             </div>
           </div>
 
-          <div class="container mx-auto flex">
+          <div id="google_results_view" class="container mx-auto flex hidden">
             <div class="mr-[7%] w-3/5 px-4">
               <span class="text-xs text-gray-500 inline-block mt-2"
                 >تقریبا ۰۰۰'۰۰۰'۱۵۲ (۰/۴۵ ثانیه)</span
               >
-
-              <ul class="mt-4 pl-14">
-                <li class="flex flex-col mb-5">
-                  <a href="#" class="text-sm">httpdz://www.varzesh3.com</a>
+              <ul class="gr_items mt-4 pl-14">
+                <li id="gr_item_1" class="flex flex-col mb-5 duration-1000">
+                  <a href="#" class="text-sm">https://www.website.com</a>
                   <a href="#" class="text-blue-title text-xl mt-1.5"
-                    >Varzesh3: مرجع فوتبال و ورزش - ورزش سه</a
+                    >سایت مربوط با سئوی حرفه ای</a
                   >
                   <p class="text-sm font-light mt-0.5">
-                    پایگاه اطلاع رسانی ورزشی برای فارسی زبانان كه اخبار حوزه
-                    ورزش (فوتبال،والیبال ،بسكتبال و...)ونتایج بازیها و جداول لیگ
-                    های ورزشی را بصورت زنده ارائه می کند.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه
                   </p>
                 </li>
-                <li class="flex flex-col mb-5">
-                  <a href="#" class="text-sm">httpdz://www.varzesh3.com</a>
+                <li id="gr_item_2" class="flex flex-col mb-5 duration-1000">
+                  <a href="#" class="text-sm">https://www.website.com</a>
                   <a href="#" class="text-blue-title text-xl mt-1.5"
-                    >Varzesh3: مرجع فوتبال و ورزش - ورزش سه</a
+                    >سایت مربوط</a
                   >
                   <p class="text-sm font-light mt-0.5">
-                    پایگاه اطلاع رسانی ورزشی برای فارسی زبانان كه اخبار حوزه
-                    ورزش (فوتبال،والیبال ،بسكتبال و...)ونتایج بازیها و جداول لیگ
-                    های ورزشی را بصورت زنده ارائه می کند.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه
                   </p>
                 </li>
-                <li class="flex flex-col mb-5">
-                  <a href="#" class="text-sm">httpdz://www.varzesh3.com</a>
+                <li id="gr_item_3" class="flex flex-col mb-5 duration-1000">
+                  <a href="#" class="text-sm">https://www.website.com</a>
                   <a href="#" class="text-blue-title text-xl mt-1.5"
-                    >Varzesh3: مرجع فوتبال و ورزش - ورزش سه</a
+                    >سایت مربوط</a
                   >
                   <p class="text-sm font-light mt-0.5">
-                    پایگاه اطلاع رسانی ورزشی برای فارسی زبانان كه اخبار حوزه
-                    ورزش (فوتبال،والیبال ،بسكتبال و...)ونتایج بازیها و جداول لیگ
-                    های ورزشی را بصورت زنده ارائه می کند.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه
                   </p>
                 </li>
-                <li class="flex flex-col mb-5">
-                  <a href="#" class="text-sm">httpdz://www.varzesh3.com</a>
+                <li
+                  id="gr_item_4"
+                  class="flex flex-col mb-5 duration-1000 relative"
+                >
+                  <div
+                    class="seo-process absolute right-[-160px] top-[31px] text-[15px]"
+                  >
+                    SEO Process:
+                    <span id="seo_percentage" class="mxb text-green-500">0</span
+                    >%
+                  </div>
+                  <a href="#" class="text-sm">https://www.yourwebsite.com</a>
                   <a href="#" class="text-blue-title text-xl mt-1.5"
-                    >Varzesh3: مرجع فوتبال و ورزش - ورزش سه</a
+                    >سایت شما</a
                   >
                   <p class="text-sm font-light mt-0.5">
-                    پایگاه اطلاع رسانی ورزشی برای فارسی زبانان كه اخبار حوزه
-                    ورزش (فوتبال،والیبال ،بسكتبال و...)ونتایج بازیها و جداول لیگ
-                    های ورزشی را بصورت زنده ارائه می کند.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه
                   </p>
                 </li>
               </ul>
@@ -1833,17 +1883,43 @@
                   alt=""
                 />
               </div>
+              <div
+                id="seo_desc_div"
+                class="w-[600px] h-[240px] p-10 bg-gray shadow-xl rounded-2xl absolute left-[-500px]"
+              >
+                <div class="title flex justify-between">
+                  <span class="font-kalameh text-[25px]"
+                    >بهینه سازی وبسایت</span
+                  >
+                  <span class="mxb text-blue text-[40px]">SEO</span>
+                </div>
+                <div class="mt-6 text text-[14px] max-h-[100px] overflow-auto">
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                    با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                    طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                    صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                    راهکارها، و شرایط سخت تایپ به پایان
+                  </p>
+                </div>
+              </div>
               <div class="p-4 border-b border-gray-200">
-                <h1 class="text-xl mb-1">ورزش سه</h1>
+                <h1 class="text-xl mb-1">سایت مربوط با سئوی حرفه ای</h1>
                 <small>وبگاه</small>
               </div>
               <p class="p-4 text-sm leading-7 text-gray-800">
-                پایگاه اطلاع رسانی ورزشی برای فارسی زبانان كه اخبار حوزه ورزش
-                (فوتبال،والیبال ،بسكتبال و...)ونتایج بازیها و جداول لیگ های
-                ورزشی را بصورت زنده ارائه می کند. پایگاه اطلاع رسانی ورزشی برای
-                فارسی زبانان كه اخبار حوزه ورزش (فوتبال،والیبال ،بسكتبال
-                و...)ونتایج بازیها و جداول لیگ های ورزشی را بصورت زنده ارائه می
-                کند.
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه
               </p>
             </div>
           </div>
@@ -1852,11 +1928,11 @@
 
       <section class="section" id="section-four">
         <div class="container mx-auto flex flex-col h-full">
-          <div class="h-[20vh]">
-            <div class="page-title">
+          <div class="h-[20vh] mt-16">
+            <div class="page-title justify-center">
               <h3>
-                <span>نظرات</span>
-                Comments
+                <span>نمونه کارها</span>
+                Work Samples
               </h3>
             </div>
             <p class="text-sm mx-auto w-10/12">
@@ -1932,14 +2008,14 @@
                 نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
                 کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
                 جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
-                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
-                زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
-                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
-                زمان مورد نیاز شامل حروفچینی دستاوردهای
+                برای طراحان رایانه الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+                فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                مورد نیاز شامل حروفچینی دستاوردهای
               </p>
             </div>
-            <ul class="w-3/4 px-10 flex flex-wrap gap-7">
-              <li class="news-card">
+            <ul class="w-3/4 px-10 gap-7 grid grid-cols-12">
+              <li class="news-card col-span-4">
                 <a href="#">
                   <div class="img-container">
                     <img src="assets/images/news-1.jpg" alt="" />
@@ -1952,7 +2028,7 @@
                   </div>
                 </a>
               </li>
-              <li class="news-card">
+              <li class="news-card col-span-4">
                 <a href="#">
                   <div class="img-container">
                     <img src="assets/images/news-1.jpg" alt="" />
@@ -1965,7 +2041,7 @@
                   </div>
                 </a>
               </li>
-              <li class="news-card">
+              <li class="news-card col-span-4">
                 <a href="#">
                   <div class="img-container">
                     <img src="assets/images/news-1.jpg" alt="" />
@@ -1978,7 +2054,7 @@
                   </div>
                 </a>
               </li>
-              <li class="news-card">
+              <li class="news-card col-span-4">
                 <a href="#">
                   <div class="img-container">
                     <img src="assets/images/news-1.jpg" alt="" />
@@ -1991,7 +2067,20 @@
                   </div>
                 </a>
               </li>
-              <li class="news-card">
+              <li class="news-card col-span-4">
+                <a href="#">
+                  <div class="img-container">
+                    <img src="assets/images/news-1.jpg" alt="" />
+                  </div>
+                  <div class="news-card-content">
+                    <p class="text-base leading-7">
+                      فیسبوک محتوای تحریف‌کننده هولوکاست را مسدود می‌کند
+                    </p>
+                    <span class="text-base">۱۴۰۱/۰۱/۰۱</span>
+                  </div>
+                </a>
+              </li>
+              <li class="news-card col-span-4">
                 <a href="#">
                   <div class="img-container">
                     <img src="assets/images/news-1.jpg" alt="" />
@@ -2063,13 +2152,13 @@
                   تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                   آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
-                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
-                  موجود طراحی اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل
-                  دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+                  افزارها شناخت بیشتری را برای طراحان رایانه الخصوص طراحان
+                  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                  توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                  شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                  اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل دنیای موجود
+                  طراحی اساسا مورد استفاده قرار گیرد
                 </p>
                 <div class="mt-auto flex justify-between">
                   <h3 class="">
@@ -2096,13 +2185,13 @@
                   تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                   آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
-                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
-                  موجود طراحی اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل
-                  دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+                  افزارها شناخت بیشتری را برای طراحان رایانه الخصوص طراحان
+                  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                  توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                  شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                  اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل دنیای موجود
+                  طراحی اساسا مورد استفاده قرار گیرد
                 </p>
                 <div class="mt-auto flex justify-between">
                   <h3 class="">
@@ -2129,13 +2218,13 @@
                   تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                   آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
-                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
-                  موجود طراحی اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل
-                  دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+                  افزارها شناخت بیشتری را برای طراحان رایانه الخصوص طراحان
+                  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                  توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                  شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                  اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل دنیای موجود
+                  طراحی اساسا مورد استفاده قرار گیرد
                 </p>
                 <div class="mt-auto flex justify-between">
                   <h3 class="">
@@ -2162,13 +2251,13 @@
                   تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
                   آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
-                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
-                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
-                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
-                  موجود طراحی اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل
-                  دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+                  افزارها شناخت بیشتری را برای طراحان رایانه الخصوص طراحان
+                  خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می
+                  توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+                  شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                  دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                  اساسا مورد استفاده قرار گیرد سوالات پیوسته اهل دنیای موجود
+                  طراحی اساسا مورد استفاده قرار گیرد
                 </p>
                 <div class="mt-auto flex justify-between">
                   <h3 class="">
@@ -2241,20 +2330,20 @@
         <div class="index-comments-right-top-circle bg-yellow-blur"></div>
         <div class="index-comments-right-bottom-circle bg-pink-blur"></div>
 
-        <footer class="h-[37vh]">
+        <footer>
           <section class="footer-content">
-            <!-- datis info -->
             <section class="footer-part-one">
-              <div class="footer-logo">
+              <a href="index.html" class="footer-logo">
                 <div class="footer-logo-container">
                   <img src="assets/images/logo.png" alt="" />
                 </div>
                 <h2 class="footer-logo-title">فناوری اطلاعات<br />داتیس</h2>
-              </div>
+              </a>
               <p>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                در
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
               </p>
               <div class="contact">
                 <div class="footer-email">
@@ -2298,7 +2387,6 @@
                 </div>
               </div>
             </section>
-            <!-- access links -->
             <section class="footer-part-two">
               <ul class="footer-list">
                 <li class="footer-list-item">دسترسی سریع</li>
@@ -2311,6 +2399,12 @@
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">لورم ایپسوم</a>
                 </li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
               </ul>
               <ul class="footer-list">
                 <li class="footer-list-item">دسترسی سریع</li>
@@ -2323,9 +2417,21 @@
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">لورم ایپسوم</a>
                 </li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
               </ul>
               <ul class="footer-list">
                 <li class="footer-list-item">دسترسی سریع</li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#" class="footer-list-link">لورم ایپسوم</a>
+                </li>
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">لورم ایپسوم</a>
                 </li>
@@ -2337,10 +2443,10 @@
                 </li>
               </ul>
             </section>
-            <!-- social networks and logos -->
-            <section class="w-3/12">
-              <h3 class="font-bold text-sm">شبکه های اجتماعی</h3>
-              <nav class="flex justify-between mt-4">
+            <section class="footer-part-three">
+              <!-- social networks links -->
+              <h3 class="font-bold text-lg">شبکه های اجتماعی</h3>
+              <nav class="flex justify-around mt-8">
                 <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2444,26 +2550,24 @@
                   </svg>
                 </a>
               </nav>
-              <div class="flex justify-between mt-4">
+              <!-- boxes -->
+              <div class="flex justify-around mt-10">
                 <div class="footer-box">
-                  <a href="#"><img src="assets/images/logo.png" alt="img" /></a>
+                  <a href="#"></a>
                 </div>
                 <div class="footer-box">
-                  <a href="#"
-                    ><img src="assets/images/news-1.jpg" alt="img"
-                  /></a>
+                  <a href="#"></a>
                 </div>
                 <div class="footer-box">
-                  <a href="#"><img src="assets/images/logo.png" alt="img" /></a>
+                  <a href="#"></a>
                 </div>
               </div>
             </section>
           </section>
 
           <!-- footer copy right text -->
-          <p
-            class="text-sm text-center pt-3 bottom-0 absolute left-0 right-0 mx-auto"
-          >
+
+          <p class="copy-right">
             تمامی حقوق این سایت متعلق به شرکت داتیس می باشد و هر گونه کپی برداری
             از آن بدون درج منبع پیگرد قانونی خواهد داشت
           </p>
