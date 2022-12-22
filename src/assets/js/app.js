@@ -24,7 +24,7 @@ document.addEventListener("click", (e) => {
 
   const isSearchField = clickedElement.closest(".search__field");
 
-  if (!isSearchField) {
+  if (!isSearchField && toggle) {
     toggle.checked = false;
     input.value = "";
   }
