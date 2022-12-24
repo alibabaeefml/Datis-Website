@@ -26,6 +26,10 @@ jQuery(function () {
     spaceBetween: 0,
     speed: 1500,
     width: 700,
+    navigation:{
+      nextEl: "#card_swiper_right",
+      prevEl: "#card_swiper_left",
+    },
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,
@@ -93,14 +97,14 @@ jQuery(function () {
   $("#fullpage-container").fullpage({
     slidesNavigation: true,
     scrollHorizontally: true,
-    afterLoad: function (section, origin, destination, direction) {
+    afterLoad: function (section, origin) {
       origin.item == $("#section-one").get(0)
         ? $("#fullpage-container").css("transform", "unset")
         : null;
       if (section && section.item == $("#section-one").get(0)) {
-        $("#section-two .title_fa, .title_en, .specialties-list").css(
+        $(".specialties-title, .specialties-list").css(
           "opacity",
-          "100%"
+          "1"
         );
         $(".specialties-list").removeClass("scale-0");
         if (innerWidth > 1024) {
@@ -110,7 +114,7 @@ jQuery(function () {
         }
       }
     },
-    afterSlideLoad(origin) {
+    afterSlideLoad() {
       if ($("#slide-three.active").length) {
         
 
@@ -261,4 +265,5 @@ jQuery(function () {
       }
     },
   });
+  isMobile() ? $("#fullpage-container").fullpage.destroy() : null;
 });
