@@ -95,7 +95,6 @@ jQuery(function () {
   typewrite(section_one_code, $("#section-one .typewriter").get(0));
   // Initialize fullpage
   if (!isMobile()) {
-    alert("triggered")
     $("#fullpage-container").fullpage({
       slidesNavigation: true,
       scrollHorizontally: true,
