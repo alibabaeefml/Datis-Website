@@ -3684,7 +3684,12 @@ svg.heart {
   color: rgb(72 1 255 / var(--tw-text-opacity));
   font-family: mxb;
 }
-
+@media only screen and (max-width:640px) {
+  .page-title h3{
+    flex-direction: column!important;
+    text-align: center!important;
+  }
+}
 .page-title h3 span {
   font-size: 24px;
   line-height: normal;
