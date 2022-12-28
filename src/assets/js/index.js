@@ -98,7 +98,7 @@ jQuery(function () {
     const view_load_animation = () => {
       if (!globalThis.slide_4_loaded) {
         globalThis.slide_4_loaded = true;
-        $(".web-card").css({ margin: "20px auto 0 auto", opacity: 1 });
+        $(".web-card").css({ margin: "150px auto 0 auto", opacity: 1 });
         enter_phone();
       }
     };
@@ -146,11 +146,15 @@ jQuery(function () {
   };
   // Initialize Swiper
   var swiper = new Swiper(".index-commenters-list", {
-    direction: "vertical",
+    direction: "horizontal",
+    breakpoints: {  
+      640: {
+        direction: "vertical",
+      },
+    },
     slidesPerView: 3,
     spaceBetween: 10,
     mousewheel: true,
-    watchSlidesProgress: true,
   });
 
   var swiper_comments = new Swiper(".index-comments-list", {
@@ -158,10 +162,9 @@ jQuery(function () {
     thumbs: {
       swiper: swiper,
     },
-
     navigation: {
-      nextEl: ".index-comments-down",
-      prevEl: ".index-comments-up",
+      nextEl: "#comment_swiper_down_btn",
+      prevEl: "#comment_swiper_up_btn",
     },
   });
 
@@ -268,8 +271,8 @@ jQuery(function () {
       },
     });
   } else {
-    $(".slide").height(1300)
-    $("#section-three").height(7000)
+    $(".section,.slide").height(1300);
+    $("#section-three").height(7000);
     section_two();
     section_three();
     section_four();
