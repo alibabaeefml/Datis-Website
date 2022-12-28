@@ -147,7 +147,7 @@ jQuery(function () {
   // Initialize Swiper
   var swiper = new Swiper(".index-commenters-list", {
     direction: "horizontal",
-    breakpoints: {  
+    breakpoints: {
       640: {
         direction: "vertical",
       },
@@ -173,7 +173,7 @@ jQuery(function () {
     slideToClickedSlide: true,
     speed: 1500,
     breakpoints: {
-      900: {
+      1080: {
         slidesPerView: 2,
       },
     },
@@ -271,11 +271,29 @@ jQuery(function () {
       },
     });
   } else {
-    $(".section,.slide").height(1300);
+    // watch for scroll into views then fire section_view loader
+    const section_loaded = {};
+    const observer = new window.IntersectionObserver(([entry, num]) => {
+      const run = (id, cb) => {
+        if (
+          entry.isIntersecting &&
+          entry.target.id == id &&
+          !section_loaded[id]
+        ) {
+          cb();
+          section_loaded[id] = true;
+        }
+      };
+      run("section-two", section_two);
+      run("slide-three", section_three);
+      run("slide-four", section_four);
+      run("slide-five", section_five);
+    });
+    observer.observe($("#section-two").get(0));
+    observer.observe($("#slide-three").get(0));
+    observer.observe($("#slide-four").get(0));
+    observer.observe($("#slide-five").get(0));
+    $(".section,.slide").css("min-height", "1300px");
     $("#section-three").height(7000);
-    section_two();
-    section_three();
-    section_four();
-    section_five();
   }
 });
