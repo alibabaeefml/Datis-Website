@@ -72,7 +72,7 @@
           </li>
         </ul>
       </nav>
-      <form class="search ">
+      <form class="search">
         <input
           type="checkbox"
           id="toggleSearch"
@@ -219,10 +219,10 @@
               alt="team-images"
             />
             <div
-              class="p-[10px] bg-red-900 bg-opacity-25 absolute top-[40%] right-[45px] rounded-[10px]"
+              class="p-[10px] bg-red-900 bg-opacity-25 absolute top-[40%] right-[134px] rounded-[10px]"
             >
-              <div class="py-4 px-5 bg-white rounded-[10px] flex">
-                <div>
+              <div class="py-4 px-5 bg-white rounded-[10px] flex items-center">
+                <div class="absolute right-[-123px] top-[18px]">
                   <div class="text-xl pb-4">ترافیک وب</div>
                   <imgnpm
                     src="assets/images/icons/chart-traffic.svg"
@@ -231,22 +231,35 @@
                     alt=""
                   />
                 </div>
-                <div class="flex flex-col justify-between">
-                  <div class="flex flex-col">
+                <div class="flex flex-col justify-center">
+                  <div class="flex flex-col items-start">
                     <span class="text-[12px]">بازدیدکنندگان </span>
                     <span
                       class="text-[#4801FF] text-[26px] mt-1"
                       id="visitors_no"
-                      >۲۰.۳۴۵</span
+                      >253</span
                     >
                   </div>
-                  <div class="flex flex-col">
-                    <span class="text-[12px]">افزایش بازدید </span>
+                  <div class="flex items-center">
+                    <span class="text-[10px] text-green-500"
+                      >افزایش بازدید
+                    </span>
                     <span
-                      class="text-green-500 text-[18px] flex justify-center mt-1"
-                      ><span id="visit_percentage">0</span>%
-                      <div class="mr-4">^</div></span
+                      class="text-green-500 flex items-center justify-center mr-1"
                     >
+                      <span id="visit_percentage">0</span>
+                      <span>%</span>
+                      <svg
+                        class="fill-green-500 scale-50"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="48"
+                        width="48"
+                      >
+                        <path
+                          d="M14.15 30.75 12 28.6l12-12 12 11.95-2.15 2.15L24 20.85Z"
+                        />
+                      </svg>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -458,7 +471,6 @@
               </div>
             </div>
           </div>
-
           <a
             href="#"
             class="text-blue-400 mx-auto w-fit text-base flex items-center gap-4 px-7 py-4 border border-blue-400 rounded-[27px] hover:text-white hover:bg-blue-400 transition-all ease-in-out duration-300"
@@ -558,9 +570,9 @@
                 </div>
                 <div class="flex flex-wrap">
                   <div class="w-full px-3">
-                    <button
-                      type="submit"
-                      class="text-white text-base فث flex items-center gap-4 px-7 py-4 rounded-[27px] bg-blue-400 hover:bg-blue-500 transition-all ease-in-out duration-300"
+                    <a
+                      href="#"
+                      class="text-blue-400 mx-auto w-fit text-base flex items-center gap-4 px-7 py-4 border border-blue-400 rounded-[27px] hover:text-white hover:bg-blue-400 transition-all ease-in-out duration-300"
                     >
                       ویژگی های بیشتر
                       <svg
@@ -578,10 +590,10 @@
                             d="M7.3.2a.676.676,0,0,1,.068.893L7.3,1.171l-5.606,5.5,5.606,5.5a.676.676,0,0,1,.068.893l-.068.077a.71.71,0,0,1-.911.066l-.078-.066L.2,7.152a.676.676,0,0,1-.068-.893L.2,6.182,6.306.2A.71.71,0,0,1,7.3.2Z"
                             transform="translate(0 0)"
                             fill="currentColor"
-                          ></path>
+                          />
                         </g>
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </form>
@@ -861,6 +873,31 @@
           },
         },
       });
+      const seo_timer = (
+        element = document,
+        start_no = 0,
+        target_no = 1000,
+        delay = 1000,
+        static_delay = 1000
+      ) => {
+        setTimeout(function () {
+          start_no++;
+          $(element).text(start_no);
+          function addSpeed(run) {
+            if (delay > 0 && run) {
+              delay = delay - 20;
+            }
+          }         
+          if (start_no > target_no) {
+            seo_timer(element, start_no, target_no, static_delay, static_delay);
+          } else {
+            addSpeed(true);
+            seo_timer(element, start_no, target_no, delay, static_delay);
+          }
+        }, delay);
+      };
+      seo_timer("#visitors_no", 253, 3500, 500, 1000);
+      seo_timer("#visit_percentage", 0, 35, 200, 5000);
     </script>
   </body>
 </html>
