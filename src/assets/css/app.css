@@ -1237,6 +1237,7 @@ footer {
   position: relative;
   text-align: center;
   transition-property: all;
+  height: max-content;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
@@ -1264,8 +1265,8 @@ footer {
 
 .news-card .img-container {
   position: relative;
-  max-height: 185px;
   width: 100%;
+  height: 50%;
   overflow: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -1283,14 +1284,16 @@ footer {
 
 .news-card-content {
   display: flex;
+  justify-content:space-between;
+  width: 100%;
+  height: 50%;
   flex-direction: column;
-  padding: 15px;
-  row-gap: 1.5rem;
+  padding: 8px;
   border-radius: 20px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: normal;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
   transition-property: all;
@@ -1309,7 +1312,7 @@ footer {
   margin-right: auto;
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: center;  
 }
 
 @media (min-width: 768px) {
@@ -3949,6 +3952,9 @@ svg.heart {
 
 #fullpage-container {
   overflow: hidden;
+}
+.section{
+  height: max-content;
 }
 #section-three .fp-slidesNav {
   display: none !important;

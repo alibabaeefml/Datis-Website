@@ -98,7 +98,7 @@ jQuery(function () {
     const view_load_animation = () => {
       if (!globalThis.slide_4_loaded) {
         globalThis.slide_4_loaded = true;
-        $(".web-card").css({ margin: "150px auto 0 auto", opacity: 1 });
+        $(".web-card").css({ "margin-inline": "auto", opacity: 1 });
         enter_phone();
       }
     };
@@ -173,7 +173,7 @@ jQuery(function () {
     slideToClickedSlide: true,
     speed: 1500,
     breakpoints: {
-      1080: {
+      1200: {
         slidesPerView: 2,
       },
     },
@@ -293,7 +293,6 @@ jQuery(function () {
     observer.observe($("#slide-three").get(0));
     observer.observe($("#slide-four").get(0));
     observer.observe($("#slide-five").get(0));
-    $(".section,.slide").css("min-height", "1300px");
     $("#section-three").height(7000);
   }
 });
