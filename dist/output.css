@@ -682,6 +682,10 @@ video {
   right: 45px;
 }
 
+.right-\[calc\(50\%_-_56px\)\] {
+  right: calc(50% - 56px);
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -789,6 +793,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mt-12 {
@@ -937,6 +946,14 @@ video {
 
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[145px\] {
+  margin-top: 145px;
 }
 
 .block {
@@ -1144,6 +1161,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .max-w-\[530px\] {
@@ -2136,6 +2157,12 @@ video {
   .max-lg\:p-4 {
     padding: 1rem;
   }
+
+  @media (min-width: 640px) {
+    .max-lg\:sm\:h-\[60vh\] {
+      height: 60vh;
+    }
+  }
 }
 
 @media not all and (min-width: 640px) {
@@ -2145,6 +2172,14 @@ video {
 
   .max-sm\:right-\[45\%\] {
     right: 45%;
+  }
+
+  .max-sm\:bottom-\[calc\(50\%_-_387px\)\] {
+    bottom: calc(50% - 387px);
+  }
+
+  .max-sm\:bottom-\[calc\(50\%_-_317px\)\] {
+    bottom: calc(50% - 317px);
   }
 
   .max-sm\:col-span-12 {
@@ -2169,6 +2204,14 @@ video {
 
   .max-sm\:-mt-14 {
     margin-top: -3.5rem;
+  }
+
+  .max-sm\:mt-\[145px\] {
+    margin-top: 145px;
+  }
+
+  .max-sm\:mt-\[90px\] {
+    margin-top: 90px;
   }
 
   .max-sm\:hidden {
@@ -2228,6 +2271,14 @@ video {
 
   .max-sm\:items-center {
     align-items: center;
+  }
+
+  .max-sm\:justify-center {
+    justify-content: center;
+  }
+
+  .max-sm\:justify-between {
+    justify-content: space-between;
   }
 
   .max-sm\:overflow-visible {
@@ -2336,6 +2387,10 @@ video {
     }
   }
 
+  .sm\:bottom-\[calc\(50\%_-_387px\)\] {
+    bottom: calc(50% - 387px);
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2349,8 +2404,32 @@ video {
     height: 50vh;
   }
 
+  .sm\:h-\[9\] {
+    height: 9;
+  }
+
+  .sm\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .sm\:h-\[900px\] {
+    height: 900px;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
   .sm\:min-h-\[350px\] {
     min-height: 350px;
+  }
+
+  .sm\:w-\[78\%\] {
+    width: 78%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:pl-14 {
@@ -2368,6 +2447,10 @@ video {
 
   .sm\:opacity-0 {
     opacity: 0;
+  }
+
+  .sm\:first-letter\:bottom-\[calc\(50\%_-_387px\)\]::first-letter {
+    bottom: calc(50% - 387px);
   }
 }
 

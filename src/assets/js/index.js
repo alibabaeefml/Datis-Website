@@ -293,6 +293,7 @@ jQuery(function () {
     observer.observe($("#slide-three").get(0));
     observer.observe($("#slide-four").get(0));
     observer.observe($("#slide-five").get(0));
-    $("#section-three").height(7000);
+    $("#section-one").addClass("sm:h-[900px]")
+    
   }
 });

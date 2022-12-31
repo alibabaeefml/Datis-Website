@@ -131,13 +131,13 @@
       <div class="newslist-header-right-circle bg-[#FFEADE]"></div>
     </header>
 
-    <main class="container mx-auto mt-14 mb-20 project-details">
+    <main class="w-full p-3 sm:container mx-auto mt-14 mb-20 project-details">
       <div class="flex flex-wrap">
         <!-- project page description -->
         <div class="swiper project-desc-swiper w-full lg:w-7/12 m-0">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="flex">
+              <div class="flex max-sm:flex-col max-sm:justify-center">
                 <div class="page-title page-title-single">
                   <h3>
                     Page Titles
@@ -166,7 +166,9 @@
                 </div>
 
                 <!-- Like News -->
-                <div class="flex flex-col mr-auto pl-0 md:pl-6">
+                <div
+                  class="flex flex-row-reverse max-sm:justify-between max-sm:w-full sm:flex-col mr-auto pl-0 md:pl-6"
+                >
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
@@ -190,7 +192,7 @@
                   </div>
                   <!-- star rating -->
                   <div
-                    class="ml-2"
+                    class="ml-2 flex max-sm:justify-center"
                     x-data="
             {
               rating: 0,
@@ -269,14 +271,14 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="flex">
+              <div class="flex max-sm:flex-col max-sm:justify-center">
                 <div class="page-title page-title-single">
                   <h3>
                     Page Titles
                     <span>عنوان صفحه</span>
                   </h3>
 
-                  <div class="flex gap-x-4 text-xs items-center">
+                  <div class="flex gap-x-4 text-xs items-center mt-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -298,12 +300,14 @@
                 </div>
 
                 <!-- Like News -->
-                <div class="flex flex-col mr-auto pl-0 md:pl-6">
+                <div
+                  class="flex flex-row-reverse max-sm:justify-between max-sm:w-full sm:flex-col mr-auto pl-0 md:pl-6"
+                >
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
-                    <input type="checkbox" id="61636" class="like-btn" />
-                    <label for="61636">
+                    <input type="checkbox" id="874613" class="like-btn" />
+                    <label for="874613">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="heart w-5"
@@ -322,7 +326,7 @@
                   </div>
                   <!-- star rating -->
                   <div
-                    class="ml-2"
+                    class="ml-2 flex max-sm:justify-center"
                     x-data="
             {
               rating: 0,
@@ -401,14 +405,14 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="flex">
+              <div class="flex max-sm:flex-col max-sm:justify-center">
                 <div class="page-title page-title-single">
                   <h3>
                     Page Titles
                     <span>عنوان صفحه</span>
                   </h3>
 
-                  <div class="flex gap-x-4 text-xs items-center">
+                  <div class="flex gap-x-4 text-xs items-center mt-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -430,12 +434,14 @@
                 </div>
 
                 <!-- Like News -->
-                <div class="flex flex-col mr-auto pl-0 md:pl-6">
+                <div
+                  class="flex flex-row-reverse max-sm:justify-between max-sm:w-full sm:flex-col mr-auto pl-0 md:pl-6"
+                >
                   <div
                     class="flex justify-end gap-x-3 items-center feedback-div"
                   >
-                    <input type="checkbox" id="6556561" class="like-btn" />
-                    <label for="6556561">
+                    <input type="checkbox" id="874613" class="like-btn" />
+                    <label for="874613">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="heart w-5"
@@ -454,7 +460,7 @@
                   </div>
                   <!-- star rating -->
                   <div
-                    class="ml-2"
+                    class="ml-2 flex max-sm:justify-center"
                     x-data="
             {
               rating: 0,
@@ -547,56 +553,6 @@
         <!-- list of pages -->
         <div thumbsSlider class="swiper project-pages-list-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
-              <div class="p-5 rounded-2xl bg-white">
-                <img src="assets/images/panel-icon.svg" alt="panel icon" />
-              </div>
-              <h3 class="text-lg text-center leading-10 mt-4">
-                پنل مدیریت
-                <br />
-                <small>بیشتر</small>
-              </h3>
-            </div>
-            <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
-              <div class="p-5 rounded-2xl bg-white">
-                <img src="assets/images/panel-icon.svg" alt="panel icon" />
-              </div>
-              <h3 class="text-lg text-center leading-10 mt-4">
-                پنل مدیریت
-                <br />
-                <small>بیشتر</small>
-              </h3>
-            </div>
-            <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
-              <div class="p-5 rounded-2xl bg-white">
-                <img src="assets/images/panel-icon.svg" alt="panel icon" />
-              </div>
-              <h3 class="text-lg text-center leading-10 mt-4">
-                پنل مدیریت
-                <br />
-                <small>بیشتر</small>
-              </h3>
-            </div>
-            <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
-              <div class="p-5 rounded-2xl bg-white">
-                <img src="assets/images/panel-icon.svg" alt="panel icon" />
-              </div>
-              <h3 class="text-lg text-center leading-10 mt-4">
-                پنل مدیریت
-                <br />
-                <small>بیشتر</small>
-              </h3>
-            </div>
-            <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
-              <div class="p-5 rounded-2xl bg-white">
-                <img src="assets/images/panel-icon.svg" alt="panel icon" />
-              </div>
-              <h3 class="text-lg text-center leading-10 mt-4">
-                پنل مدیریت
-                <br />
-                <small>بیشتر</small>
-              </h3>
-            </div>
             <div class="swiper-slide flex flex-col rounded-2xl py-3 px-6">
               <div class="p-5 rounded-2xl bg-white">
                 <img src="assets/images/panel-icon.svg" alt="panel icon" />
@@ -1170,46 +1126,14 @@
     <script src="assets/js/app.js"></script>
     <script>
       // Initialize Swiper
-      var swiper = new Swiper(".project-pages-list-swiper", {
-        freeMode: true,
-        watchSlidesProgress: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1.9,
-            spaceBetween: 0,
-          },
-
-          450: {
-            slidesPerView: 2.5,
-            spaceBetween: 10,
-          },
-          576: {
-            slidesPerView: 3.2,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 4.2,
-            spaceBetween: 10,
-          },
-          1024: {
-            slidesPerView: 5.2,
-            spaceBetween: 10,
-          },
-          1280: {
-            slidesPerView: 6,
-            spaceBetween: 30,
-          },
-          1536: {
-            slidesPerView: 7,
-            spaceBetween: 30,
-          },
-        },
+      var swiper_menu = new Swiper(".project-pages-list-swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
       });
 
-      var swiper_comments = new Swiper(".project-desc-swiper", {
-        spaceBetween: 15,
+      var swiper_pages = new Swiper(".project-desc-swiper", {
         thumbs: {
-          swiper: swiper,
+          swiper: swiper_menu,
         },
       });
     </script>
