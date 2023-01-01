@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
     <!-- css styles -->
     <link rel="stylesheet" href="assets/css/app.css" />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
   </head>
   <body>
     <!-- sidebar menu -->
@@ -883,11 +883,11 @@
         setTimeout(function () {
           start_no++;
           $(element).text(start_no);
-          function addSpeed(run) {
-            if (delay > 0 && run) {
+          function addSpeed(has_run) {
+            if (delay > 0 && has_run) {
               delay = delay - 20;
             }
-          }         
+          }
           if (start_no > target_no) {
             seo_timer(element, start_no, target_no, static_delay, static_delay);
           } else {
@@ -896,8 +896,8 @@
           }
         }, delay);
       };
-      seo_timer("#visitors_no", 253, 3500, 500, 1000);
-      seo_timer("#visit_percentage", 0, 35, 200, 5000);
+      seo_timer("#visitors_no", 253, 3500, 500, 500);
+      seo_timer("#visit_percentage", 0, 35, 1000, 5000);
     </script>
   </body>
 </html>

@@ -341,6 +341,14 @@ menu {
   padding: 0;
 }
 
+/* Scrollbar Style */
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(107,50,253);
+}
 /*
 Prevent resizing textareas horizontally by default.
 */
@@ -1402,6 +1410,9 @@ svg.heart {
 }
 
 /* work-sample card */
+.filtr-item {
+  width: 25%;
+}
 .work-sample-card {
   position: relative;
   display: flex;
@@ -3692,9 +3703,6 @@ svg.heart {
 }
 
 /* ========== Page: work-sample list ==========*/
-.filtr-item {
-  width: 100%;
-}
 
 /* ========== Page: Index ========== */
 .fp-tableCell {
@@ -4185,6 +4193,7 @@ svg.heart {
 }
 
 /* work samples's circles */
+
 .index-works-center-circle {
   width: 34rem;
   height: 34rem;
@@ -4691,9 +4700,6 @@ svg.heart {
   .work-sample-img-container::after {
     display: block;
   }
-  .newslist-main {
-    max-width: 768px;
-  }
 }
 /* .................  min-lg display ................. */
 @media (min-width: 1024px) {
@@ -4718,9 +4724,6 @@ svg.heart {
   .work-sample-card:hover::after {
     right: -1.25rem;
   }
-  .newslist-main {
-    max-width: 1024px;
-  }
   .improve-brand {
     width: 70%;
     padding-left: 3.5rem;
@@ -4733,41 +4736,10 @@ svg.heart {
     order: 2;
     display: flex;
   }
-
-  .filtr-item {
-    width: 33.333333%;
-  }
 }
 /* .................  other displays ................. */
-@media (min-width: 1280px) {
-  .newslist-main {
-    max-width: 1280px;
-  }
-  .filtr-item {
-    width: 25%;
-  }
-}
 
-@media (min-width: 1536px) {
-  .newslist-main {
-    max-width: 1536px;
-  }
- 
-}
-@media screen and (min-width: 1280px) and (max-width: 1300px) {
-  .newslist-main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-@media (min-width: 640px) {
-  .filtr-item {
-    width: 50%;
-  }
-  .newslist-main {
-    max-width: 640px;
-  }
-}
+
 
 @media only screen and (max-height: 900px) {
   .index-section-center {
