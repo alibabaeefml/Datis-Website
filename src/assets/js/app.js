@@ -72,9 +72,7 @@ const counter = (
   delay = Number,
   element = String
 ) => {
-  if(speed_ascending){
-    delay
-  }
+ 
   let interval = setInterval(() => {
     start_no++;
     $(element).text(start_no);

@@ -601,8 +601,8 @@ li {
 }
 
 header {
-  margin: 50px auto;
-  width: 90%;
+  margin: auto;
+  padding: 20px;
   display: flex;
   align-items: center;
   row-gap: 2.5rem;
@@ -809,10 +809,10 @@ footer {
 }
 
 .footer-content {
-  width: 90%;
+  padding: 20px;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap:20px
 }
 
 /* footer-part-one */
@@ -836,6 +836,9 @@ footer {
   grid-column-end: 12;
   margin-top: 1.5rem;
   justify-content: space-around;
+}
+.footer-part-three nav{
+  gap: 20px;
 }
 
 .footer-logo {
@@ -1982,7 +1985,7 @@ svg.heart {
   margin-bottom: 2rem;
 }
 
-.mt-12 {
+. {
   margin-top: 3rem;
 }
 
@@ -3542,7 +3545,7 @@ svg.heart {
 .page-title h3 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   -moz-column-gap: 0.75rem;
   column-gap: 0.75rem;
   font-size: 40px;
