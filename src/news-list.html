@@ -139,11 +139,11 @@
     <main class="newslist-main container overflow-x-hidden">
       <aside
         class="relative col-start-1 col-end-12 md:col-end-5 lg:col-end-4 md:pl-4 gap-y-6 flex flex-col"
-      >
+     data-aos="fade-left" >
         <div class="aside-card">
           <h5 class="text-sm">جستجو</h5>
           <span class="bg-gray-200 h-px block mx-auto my-4"></span>
-          <div class="flex justify-between">
+          <div class="flex justify-between gap-3">
             <input
               type="text"
               class="w-10/12 border-b border-white focus:border-b-slate-400"
@@ -295,7 +295,8 @@
       </aside>
       <section
         class="relative col-start-1 col-end-12 md:col-start-5 lg:col-start-4 md:col-end-12 md:pr-6 mt-8 md:mt-0"
-      >
+        data-aos="fade-right"
+        >
         <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <li class="news-card">
             <a href="news-details.html">
@@ -400,40 +401,10 @@
 
         <!-- page-navigation -->
         <nav class="page-navigation" aria-label="Page navigation">
-          <ul>
+          <ul class="flex-row-reverse">
             <li>
               <a href="#" class="py-2 px-3 hover:text-blue-900">
                 <span class="sr-only">next</span>
-                <svg
-                  aria-hidden="true"
-                  class="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </li>
-            <!-- start page numbers -->
-            <li class="nav-item"><a href="#">۱</a></li>
-            <li class="nav-item"><a href="#">۲</a></li>
-            <li class="nav-item"><a href="#">۳</a></li>
-            <li class="nav-item hidden md:block"><a href="#">۴</a></li>
-            <!--start points -->
-            <li>
-              <span class="select-none py-2 leading-3 text-4xl">...</span>
-            </li>
-            <!--end points -->
-            <li class="nav-item"><a href="#">۱۰</a></li>
-            <!-- end page numbers -->
-            <li>
-              <a href="#" class="py-2 px-3 hover:text-blue-900">
-                <span class="sr-only">previous</span>
                 <svg
                   aria-hidden="true"
                   class="w-5 h-5"
@@ -447,6 +418,37 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
+               
+              </a>
+            </li>
+            <!-- start page numbers -->
+            <li ><a class="nav-item" href="#">۱</a></li>
+            <li ><a class="nav-item" href="#">۲</a></li>
+            <li ><a class="nav-item" href="#">۳</a></li>
+            <li ><a class="nav-item hidden md:block" href="#">۴</a></li>
+            <!--start points -->
+            <li>
+              <span class="select-none py-2 leading-3 text-4xl">...</span>
+            </li>
+            <!--end points -->
+            <li ><a class="nav-item" href="#">۱۰</a></li>
+            <!-- end page numbers -->
+            <li>
+              <a href="#" class="py-2 px-3 hover:text-blue-900">
+                <span class="sr-only">previous</span>
+                <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
               </a>
             </li>
           </ul>

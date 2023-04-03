@@ -97,19 +97,21 @@ const isMobile = () => {
   return false;
 };
 
-AOS.init({ duration: 1000, disable: window.innerWidth < 768 });
-
 // add label to form fields
 
 $(() => {
   $("input, textarea").each((i, e) => {
     let label_text = e.getAttribute("placeholder");
-    if(!label_text)return
+    if (!label_text) return;
     $(e).before(`<span class="field_label">${label_text}</span>`);
   });
 });
 
-$("input, textarea").change((e)=>{
-  e = e.currentTarget
-  e.value.length ? $(e).addClass("filled") : $(e).removeClass("filled")
-})
+$("input, textarea").change((e) => {
+  e = e.currentTarget;
+  e.value.length ? $(e).addClass("filled") : $(e).removeClass("filled");
+
+  
+});
+
+AOS.init({ duration: 1000, disable: window.innerWidth < 768 });

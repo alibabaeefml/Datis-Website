@@ -722,16 +722,8 @@ video {
   grid-column-start: 1;
 }
 
-.col-start-6 {
-  grid-column-start: 6;
-}
-
 .col-end-12 {
   grid-column-end: 12;
-}
-
-.col-end-6 {
-  grid-column-end: 6;
 }
 
 .float-left {
@@ -2740,16 +2732,8 @@ video {
     grid-column-start: 6;
   }
 
-  .xl\:col-start-8 {
-    grid-column-start: 8;
-  }
-
   .xl\:col-end-6 {
     grid-column-end: 6;
-  }
-
-  .xl\:col-end-8 {
-    grid-column-end: 8;
   }
 
   .xl\:w-3\/4 {
