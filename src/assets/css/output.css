@@ -726,10 +726,6 @@ video {
   grid-column-end: 12;
 }
 
-.float-right {
-  float: right;
-}
-
 .float-left {
   float: left;
 }
@@ -788,11 +784,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.-mx-3 {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
 }
 
 .my-20 {
@@ -1155,11 +1146,6 @@ video {
   width: 41.666667%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-\[530px\] {
   max-width: 530px;
 }
@@ -1329,6 +1315,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1339,10 +1329,6 @@ video {
 
 .gap-20 {
   gap: 5rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-y-20 {
@@ -1424,12 +1410,12 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-xl {
@@ -1541,6 +1527,11 @@ video {
   background-color: rgb(255 246 222 / var(--tw-bg-opacity));
 }
 
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#eef6ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(238 246 255 / var(--tw-bg-opacity));
@@ -1554,11 +1545,6 @@ video {
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
-}
-
-.bg-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-25 {
@@ -1611,12 +1597,12 @@ video {
   padding: 0.25rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-\[10px\] {
@@ -1747,10 +1733,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .pb-4 {
@@ -2215,12 +2197,12 @@ video {
     margin-top: 4rem;
   }
 
-  .max-sm\:-mt-14 {
-    margin-top: -3.5rem;
-  }
-
   .max-sm\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .max-sm\:-mt-14 {
+    margin-top: -3.5rem;
   }
 
   .max-sm\:hidden {
@@ -2423,11 +2405,6 @@ video {
 
   .sm\:w-\[78\%\] {
     width: 78%;
-  }
-
-  .sm\:w-max {
-    width: -moz-max-content;
-    width: max-content;
   }
 
   .sm\:flex-col {
