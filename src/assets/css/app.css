@@ -2916,7 +2916,7 @@ svg.heart {
 .preview li {
   display: flex;
   align-items: center;
-  width: 50px;
+  overflow: hidden;
   height: 50px;
   gap: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -2929,7 +2929,7 @@ svg.heart {
 
 .preview li img {
   object-fit: cover;
-  width: 100%;
+  width: 50px;
   height: 100%;
 }
 

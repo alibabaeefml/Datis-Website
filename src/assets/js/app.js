@@ -67,12 +67,7 @@ $(window).resize(function () {
 });
 
 // Counter util
-const counter = (
-  start_no = Number,
-  end_no = Number,
-  delay = Number,
-  element = String
-) => {
+const counter = (start_no = Number, end_no = Number, delay = Number, element = String) => {
   let interval = setInterval(() => {
     start_no++;
     $(element).text(start_no);
@@ -87,11 +82,7 @@ const isMobile = () => {
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
     return true;
   }
-  if (
-    /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-      ua
-    )
-  ) {
+  if (/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
     return true;
   }
   return false;
@@ -110,8 +101,7 @@ $(() => {
 $("input, textarea").change((e) => {
   e = e.currentTarget;
   e.value.length ? $(e).addClass("filled") : $(e).removeClass("filled");
-
-  
 });
 
 AOS.init({ duration: 1000, disable: window.innerWidth < 768 });
+
