@@ -530,17 +530,16 @@ li {
 
 header {
   margin: auto;
-  padding: 20px;
   display: flex;
   align-items: center;
   row-gap: 2.5rem;
   font-size: 20px;
   line-height: 1.25rem;
+  padding: 1rem;
 }
 
 main {
   overflow: hidden;
-  margin-top: 20px;
 }
 
 .menu-container {
@@ -1303,8 +1302,15 @@ svg.heart {
 }
 
 /* work-sample card */
-.filter-item {
-  width: 25%;
+@media (min-width:768px) {
+  .filter-item {
+    width: 50%;
+  }
+}
+@media (min-width:1024px) {
+  .filter-item {
+    width: 25%;
+  }
 }
 
 .work-sample-card {

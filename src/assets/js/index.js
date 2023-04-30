@@ -22,32 +22,18 @@ jQuery(function () {
       border-radius: 40px;
     }`;
     const match_card_style = () => {
-      if (
-        $("#section-three .typewriter-dark")
-          .text()
-          .includes("height: max-content")
-      ) {
+      if ($("#section-three .typewriter-dark").text().includes("height: max-content")) {
         $("#slide-three-card").addClass("h-[500px]");
         $("#slide-three-card").addClass("max-sm:-mt-14");
       }
-      if (
-        $("#section-three .typewriter-dark").text().includes("space-between")
-      ) {
+      if ($("#section-three .typewriter-dark").text().includes("space-between")) {
         $("#avatars-ul").addClass("justify-between");
       }
-      if (
-        $("#section-three .typewriter-dark")
-          .text()
-          .includes("border-radius: 40px")
-      ) {
+      if ($("#section-three .typewriter-dark").text().includes("border-radius: 40px")) {
         $(".rounded-none").removeClass("rounded-none");
       }
     };
-    typewrite(
-      section_three_code,
-      $("#section-three .typewriter-dark").get(0),
-      match_card_style
-    );
+    typewrite(section_three_code, $("#section-three .typewriter-dark").get(0), match_card_style);
   };
   // section four loader
   const section_four = () => {
@@ -75,20 +61,8 @@ jQuery(function () {
       // enter phone number
       $("#sample_phone_inp").css("border-color", "red");
       $("#datis_phone_inp").css("border-color", "rgb(72, 1, 255)");
-      typewrite(
-        `09120000000`,
-        $("#datis_phone_inp").get(0),
-        null,
-        "input",
-        150
-      );
-      typewrite(
-        `09650000000`,
-        $("#sample_phone_inp").get(0),
-        null,
-        "input",
-        150
-      );
+      typewrite(`09120000000`, $("#datis_phone_inp").get(0), null, "input", 150);
+      typewrite(`09650000000`, $("#sample_phone_inp").get(0), null, "input", 150);
       setTimeout(() => {
         $(".phone-input").css("border-color", "rgb(209, 213, 219)");
         enter_password();
@@ -98,7 +72,7 @@ jQuery(function () {
     const view_load_animation = () => {
       if (!globalThis.slide_4_loaded) {
         globalThis.slide_4_loaded = true;
-        $(".web-card").css({ "margin-inline": "auto", opacity: 1 });
+        $(".web-card").css({"margin-inline": "auto", opacity: 1});
         enter_phone();
       }
     };
@@ -106,17 +80,9 @@ jQuery(function () {
   };
   // section five loader
   const section_five = () => {
-    typewrite(
-      "جستجوی مربوط به سایت شما",
-      $("#google_search_inp").get(0),
-      null,
-      "input",
-      0
-    );
+    typewrite("جستجوی مربوط به سایت شما", $("#google_search_inp").get(0), null, "input", 0);
     const switch_google_results = async () => {
-      let difference = parseInt(
-        $("#gr_item_2").offset().top - $("#gr_item_1").offset().top
-      );
+      let difference = parseInt($("#gr_item_2").offset().top - $("#gr_item_1").offset().top);
       $("#gr_item_4").css("translate", `0px ${-difference}px`);
       $("#gr_item_3").css("translate", `0px ${difference}px`);
       setTimeout(() => {
@@ -134,7 +100,7 @@ jQuery(function () {
         globalThis.slide_5_loaded = true;
         setTimeout(() => {
           $("#google_results_view").removeClass("hidden");
-          $("#seo_desc_div").animate({ left: "133px" }, 1000);
+          $("#seo_desc_div").animate({left: "133px"}, 1000);
           counter(0, 100, 70, "#seo_percentage");
         }, 4000);
         setTimeout(() => {
@@ -187,15 +153,18 @@ jQuery(function () {
     },
     loop: true,
   });
+  $(
+    () =>
+      new Swiper(".consultants-to-be", {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        autoplay:true,
+        loop: true,
+      })
+  );
 
   // TypeWriter Function
-  const typewrite = (
-    text = "pass some txt",
-    container,
-    callback = null,
-    type = null,
-    delay = null
-  ) => {
+  const typewrite = (text = "pass some txt", container, callback = null, type = null, delay = null) => {
     if (!container.innerText && !container.value) {
       const letters = text.split("");
 
@@ -251,9 +220,7 @@ jQuery(function () {
       slidesNavigation: true,
       scrollHorizontally: true,
       afterLoad: function (section, origin) {
-        origin.item == $("#section-one").get(0)
-          ? $("#fullpage-container").css("transform", "unset")
-          : null;
+        origin.item == $("#section-one").get(0) ? $("#fullpage-container").css("transform", "unset") : null;
         if (section && section.item == $("#section-one").get(0)) {
           section_two();
         }
@@ -275,11 +242,7 @@ jQuery(function () {
     const section_loaded = {};
     const observer = new window.IntersectionObserver(([entry, num]) => {
       const run = (id, cb) => {
-        if (
-          entry.isIntersecting &&
-          entry.target.id == id &&
-          !section_loaded[id]
-        ) {
+        if (entry.isIntersecting && entry.target.id == id && !section_loaded[id]) {
           cb();
           section_loaded[id] = true;
         }
@@ -293,7 +256,6 @@ jQuery(function () {
     observer.observe($("#slide-three").get(0));
     observer.observe($("#slide-four").get(0));
     observer.observe($("#slide-five").get(0));
-    $("#section-one").addClass("sm:h-[900px]")
-    
+    $("#section-one").addClass("sm:h-[900px]");
   }
 });
