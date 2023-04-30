@@ -902,6 +902,10 @@ video {
   margin-top: 6rem;
 }
 
+.-mt-\[2px\] {
+  margin-top: -2px;
+}
+
 .block {
   display: block;
 }
@@ -1020,6 +1024,10 @@ video {
   height: 9rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-\[13vh\] {
   max-height: 13vh;
 }
@@ -1115,6 +1123,10 @@ video {
 
 .w-5\/12 {
   width: 41.666667%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .min-w-\[200px\] {

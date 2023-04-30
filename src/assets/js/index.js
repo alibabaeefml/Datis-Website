@@ -12,28 +12,29 @@ jQuery(function () {
   // section three loader
   const section_three = () => {
     // Section Three Typewriting css-code
-    let section_three_code = `.my-card {
-      height: max-content;
+    let front_code_text = `
+    .card-profiles li div {
+    border-radius:50rem;
     }
-    .avatars-div {
-      justify-content: space-between;
+    .add-profile-btn {
+    background-color:#00DCA7;
+    color:#fff;
     }
-    .rounded {
-      border-radius: 40px;
-    }`;
-    const match_card_style = () => {
-      if ($("#section-three .typewriter-dark").text().includes("height: max-content")) {
-        $("#slide-three-card").addClass("h-[500px]");
-        $("#slide-three-card").addClass("max-sm:-mt-14");
-      }
-      if ($("#section-three .typewriter-dark").text().includes("space-between")) {
-        $("#avatars-ul").addClass("justify-between");
-      }
-      if ($("#section-three .typewriter-dark").text().includes("border-radius: 40px")) {
-        $(".rounded-none").removeClass("rounded-none");
-      }
+
+    `;
+    const apply_front_code = () => {
+      setTimeout(() => {
+        $(".card-profiles li div, .card-profiles li button").addClass("rounded-full");
+      }, 5000);
+      setTimeout(() => {
+        $(".add-profile-btn").addClass("bg-[#00DCA7]");
+      }, 10000);
+      setTimeout(() => {
+        $(".add-profile-btn").addClass("text-white");
+      }, 10500);
     };
-    typewrite(section_three_code, $("#section-three .typewriter-dark").get(0), match_card_style);
+    apply_front_code()
+    typewrite(front_code_text, $("#section-three .typewriter-dark").get(0));
   };
   // section four loader
   const section_four = () => {
@@ -158,13 +159,13 @@ jQuery(function () {
       new Swiper(".consultants-to-be", {
         slidesPerView: 2,
         spaceBetween: 15,
-        autoplay:true,
+        autoplay: true,
         loop: true,
       })
   );
 
   // TypeWriter Function
-  const typewrite = (text = "pass some txt", container, callback = null, type = null, delay = null) => {
+  const typewrite = (text = "pass some txt", container = "$('body')", callback = null, type = null, delay = null) => {
     if (!container.innerText && !container.value) {
       const letters = text.split("");
 
