@@ -19,6 +19,10 @@
   src: url("../fonts/iranyekanwebregular.woff");
 }
 
+.border-gray-200 {
+  border-color: #8f8f8f;
+}
+
 .mmd {
   font-family: mmd;
 }
@@ -538,9 +542,6 @@ header {
   padding: 1rem;
 }
 
-main {
-  overflow: hidden;
-}
 
 .menu-container {
   width: 100%;

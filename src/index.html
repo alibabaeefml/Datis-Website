@@ -274,7 +274,7 @@
 
         <div class="slide relative" id="slide-two">
           <div class="h-full flex items-center justify-center">
-            <div class="sm:container max-sm:w-[90%] mx-auto flex max-sm:flex-col items-center h-max">
+            <div class="w-full xl:container p-3 mx-auto flex max-sm:flex-col items-center h-max">
               <div class="w-6/12 max-sm:w-full sm:pl-14">
                 <h1 class="font-kalameh font-extrabold text-6xl">UI / UX</h1>
                 <h3 class="font-kalameh font-bold text-2xl leading-10 mt-2">
@@ -407,7 +407,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="h-full w-full sm:w-1/2 flex items-center justify-center">
+              <div class="h-full w-full sm:w-1/2 flex items-center justify-center max-sm:mt-5">
                 <div class="shadow-md rounded-xl bg-white p-4 text-xs w-full sm:w-[300px] h-[500px] flex flex-col gap-3">
                   <!-- header -->
                   <div class="flex justify-between items-center">
@@ -649,7 +649,7 @@
                 </h6>
 
                 <input
-                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
+                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-[#5f6368] rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
                   placeholder="شماره موبایل"
                   type="text"
                   name=""
@@ -657,7 +657,7 @@
 
                 <div class="group relative w-full">
                   <input
-                    class="pass-input border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
+                    class="pass-input border-2 w-full py-2 px-3 border-[#5f6368] rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
                     type="password"
                     name="password"
                     id="datis_pass_inp"
@@ -674,7 +674,7 @@
 
               <div
                 class="base-card opacity-0 web-card w-[300px] mx-auto h-[520px] px-4 rounded-[25px] flex flex-col justify-center items-center relative -ml-8 max-sm:mt-[145px]">
-                <div id="sample_page_loader" class="absolute duration-500 scale-0">
+                <div id="sample_page_loader" class="absolute z-10 duration-500 scale-0">
                   <div class="lds-spinner">
                     <div></div>
                     <div></div>
@@ -716,7 +716,7 @@
                 </h6>
 
                 <input
-                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-gray-300 rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
+                  class="ltr border-2 w-full mb-3 py-2.5 px-3 border-[#5f6368] rounded-lg text-gray-800 text-sm placeholder:text-gray-800 phone-input"
                   placeholder="شماره موبایل"
                   type="text"
                   name=""
@@ -724,7 +724,7 @@
 
                 <div class="group relative w-full">
                   <input
-                    class="pass-input border-2 w-full py-2 px-3 border-gray-300 rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
+                    class="pass-input border-2 w-full py-2 px-3 border-[#5f6368] rounded-lg text-gray-800 text-base placeholder:text-gray-600 text-left"
                     type="password"
                     name="password"
                     id="sample_pass_inp"
@@ -765,10 +765,10 @@
               <div class="flex max-sm:flex-col items-center">
                 <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="h-6 ml-4" alt="google logo" />
                 <!-- search box -->
-                <div class="text-sm max-sm:w-full flex p-2 w-3/5 text-[#222] border border-gray-200 rounded-full outline-none shadow-card">
+                <div class="text-sm max-sm:w-full flex p-2 w-3/5 text-[#222] border border-gray rounded-full shadow-md">
                   <input id="google_search_inp" type="search" class="w-full px-2" name="SearchBox" />
 
-                  <div class="flex border-r-2 border-gray-300">
+                  <div class="flex border-r-2 border-[#5f6368]">
                     <img class="w-6 h-6 mx-2" src="https://cdn-icons-png.flaticon.com/512/2263/2263611.png" alt="keyboard icon" />
                     <img class="w-6 h-6 mx-2" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" />
                     <svg
@@ -803,7 +803,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="border-b border-gray-200 w-full mt-6">
+              <div class=" border-b-2 border-gray w-full mt-6">
                 <div class="sm:container sm:mx-auto overflow-hidden">
                   <nav class="mr-[7%] px-4 max-sm:m-0 max-sm:p-0 flex w-3/5 gap-x-5 text-gray-500">
                     <button class="flex text-sm gap-x-1 items-center pb-2 border-b-2 border-blue-500 text-blue-500">
@@ -865,7 +865,7 @@
                     <li id="gr_item_1" class="flex flex-col mb-5 duration-1000">
                       <a href="#" class="text-sm">https://www.website.com</a>
                       <a href="#" class="text-blue-title text-xl mt-1.5">سایت مربوط با سئوی حرفه ای</a>
-                      <p class="text-sm font-light mt-0.5">
+                      <p class="text-sm font-light mt-0.5 max-sm:h-10 overflow-hidden">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                         مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
                         باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
@@ -875,7 +875,7 @@
                     <li id="gr_item_2" class="flex flex-col mb-5 duration-1000">
                       <a href="#" class="text-sm">https://www.website.com</a>
                       <a href="#" class="text-blue-title text-xl mt-1.5">سایت مربوط</a>
-                      <p class="text-sm font-light mt-0.5">
+                      <p class="text-sm font-light mt-0.5 max-sm:h-10 overflow-hidden">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                         مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
                         باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
@@ -885,7 +885,7 @@
                     <li id="gr_item_3" class="flex flex-col mb-5 duration-1000">
                       <a href="#" class="text-sm">https://www.website.com</a>
                       <a href="#" class="text-blue-title text-xl mt-1.5">سایت مربوط</a>
-                      <p class="text-sm font-light mt-0.5">
+                      <p class="text-sm font-light mt-0.5 max-sm:h-10 overflow-hidden">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                         مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
                         باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
@@ -900,7 +900,7 @@
                       </div>
                       <a href="#" class="text-sm">https://www.yourwebsite.com</a>
                       <a href="#" class="text-blue-title text-xl mt-1.5">سایت شما</a>
-                      <p class="text-sm font-light mt-0.5">
+                      <p class="text-sm font-light mt-0.5 max-sm:h-10 overflow-hidden">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
                         مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
                         باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
@@ -910,7 +910,7 @@
                   </ul>
                 </div>
 
-                <div class="w-2/5 mx-auto mt-10 rounded-lg border border-gray-300 h-fit max-[1100px]:hidden">
+                <div class="w-2/5 mx-auto mt-10 rounded-lg border border-[#5f6368] h-fit max-[1100px]:hidden">
                   <div class="relative overflow-hidden grid grid-cols-3 gap-0.5 rounded-t-lg">
                     <img class="h-full object-fill w-full max-h-[13vh] col-span-2" src="assets/images/news-1.jpg" alt="" />
                     <img class="h-full object-fill w-full max-h-[13vh]" src="assets/images/news_deatils-1.jpg" alt="" />
@@ -918,7 +918,7 @@
                     <img class="h-full object-fill w-full max-h-[13vh]" src="assets/images/human-character.svg" alt="" />
                     <img class="h-full object-fill w-full max-h-[13vh]" src="assets/images/work-sample-aside-1.jpg" alt="" />
                   </div>
-                  <div class="p-4 border-b border-gray-200">
+                  <div class="p-4 border-b border-gray">
                     <h1 class="text-xl mb-1">سایت مربوط با سئوی حرفه ای</h1>
                     <small>وبگاه</small>
                   </div>
@@ -1139,7 +1139,7 @@
       </section>
 
       <section class="section relative max-sm:mt-[90px]" id="section-six">
-        <div class="page-title h-[11vh]">
+        <div class="page-title h-[11vh] p-5">
           <h3 class="bg">
             <span>نظرات</span>
             Comments
